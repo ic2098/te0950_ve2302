@@ -1,0 +1,15 @@
+the_ROM_image:
+{
+image {
+	{ type=bootimage, file=/home/kelvin/portable_share/work/prebuilt/hardware/23_1lse_8gb/te0950-rd_23_1lse_8gb.pdi }
+	{ type=bootloader, file=/home/kelvin/portable_share/work/prebuilt/boot_images/23_1lse_8gb/u-boot.trial0/../../../../sdk/plm/Debug/plm.elf }
+/*	{ core=psm, file=/home/kelvin/portable_share/work/prebuilt/boot_images/23_1lse_8gb/u-boot.trial0/../../../software/23_1lse_8gb/psmfw.elf } */
+	{ core=psm, file=/home/kelvin/portable_share/work/prebuilt/boot_images/23_1lse_8gb/u-boot.trial0/../../../../sdk/psmfw_local/Debug/psmfw_local.elf }
+}
+image {
+	id = 0x1c000000, name=apu_subsystem
+	{ type=raw, load=0x1000, file=/home/kelvin/work/TE0950_trial0/versal_trial_0/images/linux/system.dtb }
+	{ core=a72-0, exception_level=el-3, trustzone, file=/home/kelvin/work/TE0950_trial0/versal_trial_0/images/linux/bl31.elf }
+	{ core=a72-0, exception_level=el-2, file=/home/kelvin/work/TE0950_trial0/versal_trial_0/images/linux/u-boot.elf }
+}
+}

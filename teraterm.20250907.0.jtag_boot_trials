@@ -1,0 +1,1245 @@
+[2025-09-07 09:08:16.053] 
+[2025-09-07 09:08:16.053] ********************************************************************************************
+[2025-09-07 09:08:16.053] The PetaLinux source code and images provided/generated are for demonstration purposes only.
+[2025-09-07 09:08:16.056] Please refer to https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2741928025/Moving+from+PetaLinux+to+Production+Deployment
+[2025-09-07 09:08:16.056] for more details.
+[2025-09-07 09:08:16.056] ********************************************************************************************
+[2025-09-07 09:08:16.056] PetaLinux 2024.2+release-S11061705 Trenz ttyAMA0
+[2025-09-07 09:08:16.056] 
+[2025-09-07 09:08:16.056] Trenz login: root (automatic login)
+[2025-09-07 09:08:16.058] 
+[2025-09-07 09:08:16.058] [   20.146020] audit: type=1006 audit(1709054775.876:2): pid=692 uid=0 old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=1 res=1
+[2025-09-07 09:08:16.058] [   20.158366] audit: type=1300 audit(1709054775.876:2): arch=c00000b7 syscall=64 success=yes exit=1 a0=8 a1=fffff79d7c90 a2=1 a3=1 items=0 ppid=1 pid=692 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="(systemd)" exe="/usr/lib/systemd/systemd-executor" key=(null)
+[2025-09-07 09:08:16.069] [   20.184868] audit: type=1327 audit(1709054775.876:2): proctitle="(systemd)"
+[2025-09-07 09:08:16.069] [   22.660640] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: /vcap_mipi_csi2_v_proc_ss_scaler/ports/port@0 initialization failed
+[2025-09-07 09:08:16.069] [   22.672018] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: DMA initialization failed
+[2025-09-07 09:08:16.069] [   22.682717] platform vcap_mipi_csi2_v_proc_ss_scaler: deferred probe pending
+[2025-09-07 09:08:16.069] root@Trenz:~# ;125R
+[2025-09-07 09:08:19.251] -sh: syntax error near unexpected token `;'
+[2025-09-07 09:08:19.251] root@Trenz:~# 
+[2025-09-07 09:08:19.380] root@Trenz:~# sudo reboot
+[2025-09-07 09:08:21.688] 
+[2025-09-07 09:08:21.688] Broadcast message from root@Trenz on pts/0 (Tue 2024-02-27 17:27:22 UTC):
+[2025-09-07 09:08:21.704] 
+[2025-09-07 09:08:21.704] The system will reboot now!
+[2025-09-07 09:08:21.704] 
+[2025-09-07 09:08:21.749] root@Trenz:~#          Stopping Session c1 of User root...
+[2025-09-07 09:08:21.780] [  OK  ] Removed slice Slice /system/modprobe.
+[2025-09-07 09:08:21.795] [  OK  ] Stopped target Multi-User System.
+[2025-09-07 09:08:21.810] [  OK  ] Stopped target Login Prompts.
+[2025-09-07 09:08:21.826] [  OK  ] Stopped target Host and Network Name Lookups.
+[2025-09-07 09:08:21.857] [  OK  ] Stopped target RPC Port Mapper.
+[2025-09-07 09:08:21.859] [  OK  ] Stopped target System Time Set.
+[2025-09-07 09:08:21.888] [  OK  ] Stopped target Timer Units.
+[2025-09-07 09:08:21.891] [  OK  ] Stopped Daily Cleanup of Temporary Directories.
+[2025-09-07 09:08:21.920] [  OK  ] Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[2025-09-07 09:08:21.925]          Stopping Kernel Logging Service...
+[2025-09-07 09:08:21.951]          Stopping System Logging Service...
+[2025-09-07 09:08:21.954]          Stopping Getty on tty1...
+[2025-09-07 09:08:21.982]          Stopping Serial Getty on ttyAMA0...
+[2025-09-07 09:08:22.029]          Stopping Load/Save OS Random Seed...
+[2025-09-07 09:08:22.044]          Stopping Target Communication Framework agent...
+[2025-09-07 09:08:22.077] [  OK  ] Stopped Kernel Logging Service.
+[2025-09-07 09:08:22.092] [  OK  ] Stopped System Logging Service.
+[2025-09-07 09:08:22.108] [  OK  ] Stopped Target Communication Framework agent.
+[2025-09-07 09:08:22.125] [  OK  ] Stopped Getty on tty1.
+[2025-09-07 09:08:22.155] [  OK  ] Stopped Serial Getty on ttyAMA0.
+[2025-09-07 09:08:22.170] [  OK  ] Stopped Load/Save OS Random Seed.
+[2025-09-07 09:08:22.186] [  OK  ] Stopped Session c1 of User root.
+[2025-09-07 09:08:22.233] [  OK  ] Removed slice Slice /system/getty.
+[2025-09-07 09:08:22.247] [  OK  ] Removed slice Slice /system/serial-getty.
+[2025-09-07 09:08:22.263]          Stopping User Login Management...
+[2025-09-07 09:08:22.294]          Stopping Permit User Sessions...
+[2025-09-07 09:08:22.310]          Stopping User Manager for UID 0...
+[2025-09-07 09:08:22.341] [  OK  ] Stopped User Login Management.
+[2025-09-07 09:08:22.373] [  OK  ] Stopped User Manager for UID 0.
+[2025-09-07 09:08:22.389] [  OK  ] Stopped Permit User Sessions.
+[2025-09-07 09:08:22.497] [  OK  ] Stopped target Network.
+[2025-09-07 09:08:22.503] [  OK  ] Stopped target Remote File Systems.
+[2025-09-07 09:08:22.528]          Stopping Network Configuration...
+[2025-09-07 09:08:22.559]          Stopping User Runtime Directory /run/user/0...
+[2025-09-07 09:08:22.564] [  OK  ] Stopped Network Configuration.
+[2025-09-07 09:08:22.590] [  OK  ] Stopped target Preparation for Network.
+[2025-09-07 09:08:22.606] [  OK  ] Stopped Generate network units from Kernel command line.
+[2025-09-07 09:08:22.611] [  OK  ] Unmounted /run/user/0.
+[2025-09-07 09:08:22.652] [  OK  ] Stopped User Runtime Directory /run/user/0.
+[2025-09-07 09:08:22.659] [  OK  ] Removed slice User Slice of UID 0.
+[2025-09-07 09:08:22.683]          Stopping D-Bus System Message Bus...
+[2025-09-07 09:08:22.714] [  OK  ] Stopped D-Bus System Message Bus.
+[2025-09-07 09:08:22.729] [  OK  ] Stopped target Basic System.
+[2025-09-07 09:08:22.745] [  OK  ] Stopped target Path Units.
+[2025-09-07 09:08:22.760] [  OK  ] Stopped Dispatch Password Requests to Console Directory Watch.
+[2025-09-07 09:08:22.776] [  OK  ] Stopped Forward Password Requests to Wall Directory Watch.
+[2025-09-07 09:08:22.795] [  OK  ] Stopped target Slice Units.
+[2025-09-07 09:08:22.808] [  OK  ] Removed slice User and Session Slice.
+[2025-09-07 09:08:22.824] [  OK  ] Stopped target Socket Units.
+[2025-09-07 09:08:22.839] [  OK  ] Closed D-Bus System Message Bus Socket.
+[2025-09-07 09:08:22.855] [  OK  ] Closed dropbear.socket.
+[2025-09-07 09:08:22.871] [  OK  ] Stopped target System Initialization.
+[2025-09-07 09:08:22.886] [  OK  ] Closed Syslog Socket.
+[2025-09-07 09:08:22.902] [  OK  ] Closed Network Service Netlink Socket.
+[2025-09-07 09:08:22.917]          Stopping Network Name Resolution...
+[2025-09-07 09:08:22.932]          Stopping Network Time Synchronization...
+[2025-09-07 09:08:22.948] [  OK  ] Stopped Update is Completed.
+[2025-09-07 09:08:22.964] [  OK  ] Stopped Rebuild Dynamic Linker Cache.
+[2025-09-07 09:08:22.980] [  OK  ] Stopped Rebuild Journal Catalog.
+[2025-09-07 09:08:23.011]          Stopping Record System Boot/Shutdown in UTMP...
+[2025-09-07 09:08:23.043] [  OK  ] Stopped Network Name Resolution.
+[2025-09-07 09:08:23.076] [  OK  ] Stopped Network Time Synchronization.
+[2025-09-07 09:08:23.122] [  OK  ] Stopped Apply Kernel Variables.
+[2025-09-07 09:08:23.138] [  OK  ] Stopped Load Kernel Modules.
+[2025-09-07 09:08:23.168] [  OK  ] Stopped Record System Boot/Shutdown in UTMP.
+[2025-09-07 09:08:23.201] [  OK  ] Stopped Create Volatile Files and Directories.
+[2025-09-07 09:08:23.205] [  OK  ] Stopped target Local File Systems.
+[2025-09-07 09:08:23.248]          Unmounting /run/media/BOOT-mmcblk1p1...
+[2025-09-07 09:08:23.251]          Unmounting /run/media/ROOTFS-mmcblk1p2...
+[2025-09-07 09:08:23.283]          Unmounting Temporary Directory /tmp...
+[2025-09-07 09:08:23.309]          Unmounting /var/volatile...
+[2025-09-07 09:08:23.326] [  OK  ] Unmounted /run/media/BOOT-mmcblk1p1.
+[2025-09-07 09:08:23.342] [  OK  ] Unmounted /run/media/ROOTFS-mmcblk1p2.
+[2025-09-07 09:08:23.371] [  OK  ] Unmounted Temporary Directory /tmp.
+[2025-09-07 09:08:23.388] [  OK  ] Unmounted /var/volatile.
+[2025-09-07 09:08:23.403] [  OK  ] Stopped target Swaps.
+[2025-09-07 09:08:23.434] [  OK  ] Reached target Unmount All Filesystems.
+[2025-09-07 09:08:23.449] [  OK  ] Stopped File System Check on /dev/mmcblk1p1.
+[2025-09-07 09:08:23.465] [  OK  ] Stopped File System Check on /dev/mmcblk1p2.
+[2025-09-07 09:08:23.480] [  OK  ] Removed slice Slice /system/systemd-fsck.
+[2025-09-07 09:08:23.496] [  OK  ] Stopped target Preparation for Local File Systems.
+[2025-09-07 09:08:23.511] [  OK  ] Stopped Create Static Device Nodes in /dev.
+[2025-09-07 09:08:23.527] [  OK  ] Stopped Create System Users.
+[2025-09-07 09:08:23.543] [  OK  ] Stopped Remount Root and Kernel File Systems.
+[2025-09-07 09:08:23.560] [  OK  ] Stopped Create Static Device Nodes in /dev gracefully.
+[2025-09-07 09:08:23.576] [  OK  ] Reached target System Shutdown.
+[2025-09-07 09:08:23.591] [  OK  ] Reached target Late Shutdown Services.
+[2025-09-07 09:08:23.607] [  OK  ] Finished System Reboot.
+[2025-09-07 09:08:23.623] [  OK  ] Reached target System Reboot.
+[2025-09-07 09:08:23.750] [   89.040710] systemd-shutdown[1]: Syncing filesystems and block devices.
+[2025-09-07 09:08:23.766] [   89.047635] systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[2025-09-07 09:08:23.797] [   89.086509] systemd-journald[197]: Received SIGTERM from PID 1 (systemd-shutdow).
+[2025-09-07 09:08:23.812] [   89.097951] audit: type=1335 audit(1709054844.824:3): pid=197 uid=0 auid=4294967295 tty=(none) ses=4294967295 comm="systemd-journal" exe="/usr/lib/systemd/systemd-journald" nl-mcgrp=1 op=disconnect res=1
+[2025-09-07 09:08:23.829] [   89.117039] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[2025-09-07 09:08:23.859] [   89.143174] systemd-shutdown[1]: Unmounting file systems.
+[2025-09-07 09:08:23.860] [   89.152273] (sd-remount)[749]: Remounting '/' read-only with options ''.
+[2025-09-07 09:08:23.890] [   89.161659] systemd-shutdown[1]: All filesystems unmounted.
+[2025-09-07 09:08:23.890] [   89.167290] systemd-shutdown[1]: Deactivating swaps.
+[2025-09-07 09:08:23.890] [   89.172488] systemd-shutdown[1]: All swaps deactivated.
+[2025-09-07 09:08:23.890] [   89.177921] systemd-shutdown[1]: Detaching loop devices.
+[2025-09-07 09:08:23.890] [   89.187617] systemd-shutdown[1]: All loop devices detached.
+[2025-09-07 09:08:23.921] [   89.193252] systemd-shutdown[1]: Stopping MD devices.
+[2025-09-07 09:08:23.921] [   89.198931] systemd-shutdown[1]: All MD devices stopped.
+[2025-09-07 09:08:23.921] [   89.204334] systemd-shutdown[1]: Detaching DM devices.
+[2025-09-07 09:08:23.925] [   89.210153] systemd-shutdown[1]: All DM devices detached.
+[2025-09-07 09:08:23.925] [   89.215627] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[2025-09-07 09:08:23.954] [   89.227096] systemd-shutdown[1]: Syncing filesystems and block devices.
+[2025-09-07 09:08:23.954] [   89.233931] systemd-shutdown[1]: Rebooting.
+[2025-09-07 09:08:23.957] [   89.246273] reboot: Restarting system
+[2025-09-07 09:08:23.957] INFO:    PSCI Power Domain Map:
+[2025-09-07 09:08:23.957] INFO:      Domain Node : Level 1, parent_node 4294967295, State ON (0x0)
+[2025-09-07 09:08:23.985] INFO:      Domain Node : Level 0, parent_node 0, State ON (0x0)
+[2025-09-07 09:08:23.985] INFO:      CPU Node : MPID 0x0, parent_node 0, State ON (0x0)
+[2025-09-07 09:08:23.985] INFO:      CPU Node : MPID 0x1, parent_node 0, State ON (0x0)
+[2025-09-07 09:08:24.442] [0.020]****************************************
+[2025-09-07 09:08:24.443] [0.061]Xilinx Versal Platform Loader and Manager 
+[2025-09-07 09:08:24.443] [0.105]Release 2023.2   Sep  6 2025  -  15:34:16
+[2025-09-07 09:08:24.458] [0.150]Platform Version: v2.0 PMC: v2.0, PS: v2.0
+[2025-09-07 09:08:24.458] [0.202]BOOTMODE: 0x5, MULTIBOOT: 0xF0000000
+[2025-09-07 09:08:24.458] [0.246]****************************************
+[2025-09-07 09:08:24.458] [0.529]Non Secure Boot
+[2025-09-07 09:08:24.477] [4.262]PLM Initialization Time 
+[2025-09-07 09:08:24.477] [4.298]***********Boot PDI Load: Started***********
+[2025-09-07 09:08:24.477] [4.347]Loading PDI from SD1
+[2025-09-07 09:08:24.477] [4.381]Monolithic/Master Device
+[2025-09-07 09:08:24.477] [287.830]283.472 ms: PDI initialization time
+[2025-09-07 09:08:24.490] [287.881]+++Loading Image#: 0x1, Name: lpd, Id: 0x04210002
+[2025-09-07 09:08:24.490] [287.943]---Loading Partition#: 0x1, Id: 0xC
+[2025-09-07 09:08:24.490] [342.294] 54.292 ms for Partition#: 0x1, Size: 10096 Bytes
+[2025-09-07 09:08:24.490] [347.125]---Loading Partition#: 0x2, Id: 0x0
+[2025-09-07 09:08:24.506] [359.202] 8.294 ms for Partition#: 0x2, Size: 55232 Bytes
+[2025-09-07 09:08:24.506] PSM Firmware version: 2024.2 [Build: Apr 23 2025 07:50:54 ] 
+[2025-09-07 09:08:24.521] [366.454]+++Loading Image#: 0x2, Name: pl_cfi, Id: 0x18700000
+[2025-09-07 09:08:24.521] [371.590]---Loading Partition#: 0x3, Id: 0x3
+[2025-09-07 09:08:24.888] [721.954] 346.581 ms for Partition#: 0x3, Size: 2380032 Bytes
+[2025-09-07 09:08:24.889] [724.423]---Loading Partition#: 0x4, Id: 0x5
+[2025-09-07 09:08:25.001] [827.666] 99.459 ms for Partition#: 0x4, Size: 444336 Bytes
+[2025-09-07 09:08:25.002] [829.984]+++Loading Image#: 0x3, Name: fpd, Id: 0x0420C003
+[2025-09-07 09:08:25.015] [834.893]---Loading Partition#: 0x5, Id: 0x8
+[2025-09-07 09:08:25.015] [842.002] 3.328 ms for Partition#: 0x5, Size: 4528 Bytes
+[2025-09-07 09:08:25.015] [844.425]+++Loading Image#: 0x4, Name: apu_subsystem, Id: 0x1C000000
+[2025-09-07 09:08:25.030] [849.805]---Loading Partition#: 0x6, Id: 0x0
+[2025-09-07 09:08:25.030] [864.223] 10.637 ms for Partition#: 0x6, Size: 67632 Bytes
+[2025-09-07 09:08:25.046] [866.446]---Loading Partition#: 0x7, Id: 0x0
+[2025-09-07 09:08:25.206] [1026.281] 156.052 ms for Partition#: 0x7, Size: 1202208 Bytes
+[2025-09-07 09:08:25.207] [1028.833]---Loading Partition#: 0x8, Id: 0x0
+[2025-09-07 09:08:25.222] [1039.588] 6.891 ms for Partition#: 0x8, Size: 44304 Bytes
+[2025-09-07 09:08:25.222] [1041.870]***********Boot PDI Load: Done***********
+[2025-09-07 09:08:25.222] [1046.171]126.267 ms: ROM Time
+[2025-09-07 09:08:25.237] [1048.787]Total PLM Boot Time 
+[2025-09-07 09:08:25.237] INFO:    BL31: Early console setup
+[2025-09-07 09:08:25.237] NOTICE:  TF-A running on SILICON 0
+[2025-09-07 09:08:25.238] [1057.345]ATF_ADDR: 0xFFFF0830, 0x0
+[2025-09-07 09:08:25.238] [1060.363]ATF_VALUE: 0x584E4C58
+[2025-09-07 09:08:25.254] [1063.072]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.254] [1065.207]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.254] [1067.343]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.254] [1069.478]ATF_VALUE: 0xF0254C18
+[2025-09-07 09:08:25.254] [1072.188]ATF_VALUE: 0xF0254E78
+[2025-09-07 09:08:25.254] [1074.899]ATF_VALUE: 0xF02551B8
+[2025-09-07 09:08:25.269] [1077.610]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.269] [1079.745]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.269] [1081.881]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.269] [1084.015]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.269] [1086.150]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.269] [1088.285]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.269] [1090.420]ATF_VALUE: 0xF62B0000
+[2025-09-07 09:08:25.286] [1093.129]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.286] [1095.264]ATF_VALUE: 0xF6352000
+[2025-09-07 09:08:25.286] [1097.973]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.286] [1100.108]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.286] [1102.244]ATF_VALUE: 0x0
+[2025-09-07 09:08:25.286] [1104.379]ATF_VALUE: 0xF0257648
+[2025-09-07 09:08:25.286] [1107.089]ATF_VALUE: 0xF02578B8
+[2025-09-07 09:08:25.301] [1109.799]ATF_VALUE: 0xF0257B28
+[2025-09-07 09:08:25.301] [1112.509]ATF_VALUE: 0xF02559C8
+[2025-09-07 09:08:25.301] [1115.219]ATF_VALUE: 0xF02560F4
+[2025-09-07 09:08:25.301] INFO:    BL31: GET_HANDOFF_PARAMS call success=0
+[2025-09-07 09:08:25.301] INFO:    BL31: PLM to TF-A handover success 0
+[2025-09-07 09:08:25.317] NOTICE:  BL31: Secure code at 0x0
+[2025-09-07 09:08:25.317] NOTICE:  BL31: Non secure code at 0x8000000
+[2025-09-07 09:08:25.317] NOTICE:  BL31: v2.10.0	(debug):xlnx_rebase_v2.10_2024.1-27-g14cea4616-dirty
+[2025-09-07 09:08:25.332] NOTICE:  BL31: Built : 04:42:28, Sep 19 2024
+[2025-09-07 09:08:25.332] INFO:    GICv3 with legacy support detected.
+[2025-09-07 09:08:25.332] INFO:    ARM GICv3 driver initialized in EL3
+[2025-09-07 09:08:25.332] INFO:    Maximum SPI INTID supported: 191
+[2025-09-07 09:08:25.348] INFO:    BL31: Initializing runtime services
+[2025-09-07 09:08:25.348] INFO:    BL31: cortex_a72: CPU workaround for erratum 859971 was applied
+[2025-09-07 09:08:25.348] INFO:    BL31: cortex_a72: CPU workaround for erratum 1319367 was applied
+[2025-09-07 09:08:25.365] INFO:    BL31: cortex_a72: CPU workaround for CVE 2017_5715 was applied
+[2025-09-07 09:08:25.365] INFO:    BL31: cortex_a72: CPU workaround for CVE 2018_3639 was applied
+[2025-09-07 09:08:25.365] INFO:    BL31: cortex_a72: CPU workaround for CVE 2022_23960 was applied
+[2025-09-07 09:08:25.381] INFO:    BL31: Preparing for EL3 exit to normal world
+[2025-09-07 09:08:25.381] INFO:    Entry point address = 0x8000000
+[2025-09-07 09:08:25.381] INFO:    SPSR = 0x3c9
+[2025-09-07 09:08:25.782] 
+[2025-09-07 09:08:25.782] 
+[2025-09-07 09:08:25.782] U-Boot 2024.01 (Oct 24 2024 - 10:42:51 +0000)
+[2025-09-07 09:08:25.782] 
+[2025-09-07 09:08:25.782] CPU:   Versal
+[2025-09-07 09:08:25.782] Silicon: v2
+[2025-09-07 09:08:25.782] Chip:  v2
+[2025-09-07 09:08:25.782] Model: Xilinx Versal
+[2025-09-07 09:08:25.798] DRAM:  2 GiB (effective 8 GiB)
+[2025-09-07 09:08:26.165] EL Level:	EL2
+[2025-09-07 09:08:26.181] Core:  46 devices, 23 uclasses, devicetree: board
+[2025-09-07 09:08:26.181] MMC:   mmc@f1040000: 0, mmc@f1050000: 1
+[2025-09-07 09:08:26.181] Loading Environment from FAT... Unable to use mmc 0:0...
+[2025-09-07 09:08:26.407] In:    serial@ff010000
+[2025-09-07 09:08:26.407] Out:   serial@ff010000
+[2025-09-07 09:08:26.407] Err:   serial@ff010000
+[2025-09-07 09:08:26.407] Bootmode: SD_MODE1
+[2025-09-07 09:08:26.407] Net:   
+[2025-09-07 09:08:26.422] ZYNQ GEM: ff0c0000, mdio bus ff0c0000, phyaddr 1, interface rgmii-id
+[2025-09-07 09:08:26.438] eth0: ethernet@ff0c0000
+[2025-09-07 09:08:26.438] Hit any key to stop autoboot:  5  4  3  2  1  0 
+[2025-09-07 09:08:31.535] switch to partitions #0, OK
+[2025-09-07 09:08:31.552] mmc1 is current device
+[2025-09-07 09:08:31.552] Scanning mmc 1:1...
+[2025-09-07 09:08:31.583] Found U-Boot script /boot.scr
+[2025-09-07 09:08:31.598] 2477 bytes read in 15 ms (161.1 KiB/s)
+[2025-09-07 09:08:31.599] ## Executing script at 20000000
+[2025-09-07 09:08:31.599] [TE_BOOT-00] Automatically generated Trenz Electronic Boot Source file with setup def
+[2025-09-07 09:08:31.603] [TE_BOOT-00] Boot Source Script File creation date: 2025_04_23 07_48_11
+[2025-09-07 09:08:31.603] [TE_BOOT-01] Trenz Boot-file version 1.1 (development)
+[2025-09-07 09:08:31.629] [TE_BOOT-10] Found boot.scr in device: mmc1
+[2025-09-07 09:08:31.629] [TE_BOOT-11] Chosen Bootmode is from boot_targets=mmc1 jtag mmc0 mmc1 xspi0 usb0 pxe dhcp
+[2025-09-07 09:08:31.629] [TE_BOOT-11] Use RAM Address 0x10000000 for linux image
+[2025-09-07 09:08:31.645] [TE_BOOT-21] boot_target is mmc1. Found image.ub on mmc1:1
+[2025-09-07 09:08:39.214] 89978995 bytes read in 7565 ms (11.3 MiB/s)
+[2025-09-07 09:08:39.230] ## Loading kernel from FIT Image at 10000000 ...
+[2025-09-07 09:08:39.230]    Using 'conf-system-top.dtb' configuration
+[2025-09-07 09:08:39.230]    Trying 'kernel-1' kernel subimage
+[2025-09-07 09:08:39.230]      Description:  Linux kernel
+[2025-09-07 09:08:39.242]      Type:         Kernel Image
+[2025-09-07 09:08:39.242]      Compression:  gzip compressed
+[2025-09-07 09:08:39.242]      Data Start:   0x100000f4
+[2025-09-07 09:08:39.242]      Data Size:    10639720 Bytes = 10.1 MiB
+[2025-09-07 09:08:39.242]      Architecture: AArch64
+[2025-09-07 09:08:39.262]      OS:           Linux
+[2025-09-07 09:08:39.262]      Load Address: 0x00200000
+[2025-09-07 09:08:39.262]      Entry Point:  0x00200000
+[2025-09-07 09:08:39.262]      Hash algo:    sha256
+[2025-09-07 09:08:39.262]      Hash value:   f5d5642ec83e479625ec63ce2535dcc0c3dcb0221fc5b313ea56b805f13889f4
+[2025-09-07 09:08:39.282]    Verifying Hash Integrity ... sha256+ OK
+[2025-09-07 09:08:39.420] ## Loading ramdisk from FIT Image at 10000000 ...
+[2025-09-07 09:08:39.436]    Using 'conf-system-top.dtb' configuration
+[2025-09-07 09:08:39.436]    Trying 'ramdisk-1' ramdisk subimage
+[2025-09-07 09:08:39.436]      Description:  petalinux-image-minimal
+[2025-09-07 09:08:39.436]      Type:         RAMDisk Image
+[2025-09-07 09:08:39.436]      Compression:  uncompressed
+[2025-09-07 09:08:39.451]      Data Start:   0x10a34dec
+[2025-09-07 09:08:39.451]      Data Size:    79274807 Bytes = 75.6 MiB
+[2025-09-07 09:08:39.451]      Architecture: AArch64
+[2025-09-07 09:08:39.451]      OS:           Linux
+[2025-09-07 09:08:39.451]      Load Address: unavailable
+[2025-09-07 09:08:39.467]      Entry Point:  unavailable
+[2025-09-07 09:08:39.467]      Hash algo:    sha256
+[2025-09-07 09:08:39.467]      Hash value:   b82b798d40f14e8eaabff967afb813aaaa2de3be431c6f919cb8eb1cd85b544e
+[2025-09-07 09:08:39.467]    Verifying Hash Integrity ... sha256+ OK
+[2025-09-07 09:08:40.620] ## Loading fdt from FIT Image at 10000000 ...
+[2025-09-07 09:08:40.620]    Using 'conf-system-top.dtb' configuration
+[2025-09-07 09:08:40.620]    Trying 'fdt-system-top.dtb' fdt subimage
+[2025-09-07 09:08:40.620]      Description:  Flattened Device Tree blob
+[2025-09-07 09:08:40.627]      Type:         Flat Device Tree
+[2025-09-07 09:08:40.627]      Compression:  uncompressed
+[2025-09-07 09:08:40.627]      Data Start:   0x10a25b6c
+[2025-09-07 09:08:40.627]      Data Size:    44304 Bytes = 43.3 KiB
+[2025-09-07 09:08:40.627]      Architecture: AArch64
+[2025-09-07 09:08:40.651]      Hash algo:    sha256
+[2025-09-07 09:08:40.651]      Hash value:   d155a398050a875d8a71450f5d6f3698d883ab2dbc5e10dbc53b17e17d673a4f
+[2025-09-07 09:08:40.651]    Verifying Hash Integrity ... sha256+ OK
+[2025-09-07 09:08:40.651]    Booting using the fdt blob at 0x10a25b6c
+[2025-09-07 09:08:40.667] Working FDT set to 10a25b6c
+[2025-09-07 09:08:40.667]    Uncompressing Kernel Image
+[2025-09-07 09:08:41.031]    Loading Ramdisk to 752fc000, end 79e96337 ... OK
+[2025-09-07 09:08:41.379]    Loading Device Tree to 00000000752ee000, end 00000000752fbd0f ... OK
+[2025-09-07 09:08:41.379] Working FDT set to 752ee000
+[2025-09-07 09:08:41.379] 
+[2025-09-07 09:08:41.379] Starting kernel ...
+[2025-09-07 09:08:41.379] 
+[2025-09-07 09:08:41.457] [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd083]
+[2025-09-07 09:08:41.473] [    0.000000] Linux version 6.6.40-xilinx-g79e21eb1c72a (oe-user@oe-host) (aarch64-xilinx-linux-gcc (GCC) 13.3.0, GNU ld (GNU Binutils) 2.42.0.20240716) #1 SMP Tue Oct 29 11:52:30 UTC 2024
+[2025-09-07 09:08:41.476] [    0.000000] KASLR disabled due to lack of seed
+[2025-09-07 09:08:41.476] [    0.000000] Machine model: Xilinx Versal
+[2025-09-07 09:08:41.476] [    0.000000] earlycon: pl11 at MMIO32 0x00000000ff010000 (options '115200n8')
+[2025-09-07 09:08:41.503] [    0.000000] printk: bootconsole [pl11] enabled
+[2025-09-07 09:08:41.503] [    0.000000] efi: UEFI not found.
+[2025-09-07 09:08:41.744] [    0.000000] Zone ranges:
+[2025-09-07 09:08:41.745] [    0.000000]   DMA32    [mem 0x0000000000000000-0x00000000ffffffff]
+[2025-09-07 09:08:41.745] [    0.000000]   Normal   [mem 0x0000000100000000-0x000000097fffffff]
+[2025-09-07 09:08:41.745] [    0.000000] Movable zone start for each node
+[2025-09-07 09:08:41.749] [    0.000000] Early memory node ranges
+[2025-09-07 09:08:41.749] [    0.000000]   node   0: [mem 0x0000000000000000-0x000000007fffffff]
+[2025-09-07 09:08:41.749] [    0.000000]   node   0: [mem 0x0000000800000000-0x000000097fffffff]
+[2025-09-07 09:08:41.780] [    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000097fffffff]
+[2025-09-07 09:08:41.822] [    0.000000] cma: Reserved 256 MiB at 0x0000000065200000 on node -1
+[2025-09-07 09:08:41.822] [    0.000000] psci: probing for conduit method from DT.
+[2025-09-07 09:08:41.838] [    0.000000] psci: PSCIv1.1 detected in firmware.
+[2025-09-07 09:08:41.838] [    0.000000] psci: Using standard PSCI v0.2 function IDs
+[2025-09-07 09:08:41.838] [    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[2025-09-07 09:08:41.854] [    0.000000] psci: SMC Calling Convention v1.4
+[2025-09-07 09:08:41.854] [    0.000000] percpu: Embedded 19 pages/cpu s37864 r8192 d31768 u77824
+[2025-09-07 09:08:41.854] [    0.000000] Detected PIPT I-cache on CPU0
+[2025-09-07 09:08:41.869] [    0.000000] CPU features: detected: GIC system register CPU interface
+[2025-09-07 09:08:41.869] [    0.000000] CPU features: detected: Spectre-v2
+[2025-09-07 09:08:41.869] [    0.000000] CPU features: detected: Spectre-v3a
+[2025-09-07 09:08:41.884] [    0.000000] CPU features: detected: Spectre-BHB
+[2025-09-07 09:08:41.884] [    0.000000] CPU features: detected: ARM erratum 1742098
+[2025-09-07 09:08:41.884] [    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[2025-09-07 09:08:41.900] [    0.000000] alternatives: applying boot alternatives
+[2025-09-07 09:08:41.900] [    0.000000] Kernel command line: console=ttyAMA0 earlycon=pl011,mmio32,0xFF010000,115200n8 root=/dev/ram0 rw
+[2025-09-07 09:08:41.917] [    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[2025-09-07 09:08:41.917] [    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[2025-09-07 09:08:41.931] [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2064384
+[2025-09-07 09:08:41.931] [    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[2025-09-07 09:08:41.947] [    0.000000] software IO TLB: area num 2.
+[2025-09-07 09:08:41.963] [    0.000000] software IO TLB: mapped [mem 0x000000007c000000-0x0000000080000000] (64MB)
+[2025-09-07 09:08:42.025] [    0.000000] Memory: 7797984K/8388608K available (15488K kernel code, 1068K rwdata, 4472K rodata, 2880K init, 468K bss, 328480K reserved, 262144K cma-reserved)
+[2025-09-07 09:08:42.041] [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[2025-09-07 09:08:42.056] [    0.000000] rcu: Hierarchical RCU implementation.
+[2025-09-07 09:08:42.056] [    0.000000] rcu: 	RCU event tracing is enabled.
+[2025-09-07 09:08:42.056] [    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=16 to nr_cpu_ids=2.
+[2025-09-07 09:08:42.072] [    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[2025-09-07 09:08:42.072] [    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[2025-09-07 09:08:42.087] [    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[2025-09-07 09:08:42.087] [    0.000000] GICv3: GIC: Using split EOI/Deactivate mode
+[2025-09-07 09:08:42.087] [    0.000000] GICv3: 160 SPIs implemented
+[2025-09-07 09:08:42.087] [    0.000000] GICv3: 0 Extended SPIs implemented
+[2025-09-07 09:08:42.103] [    0.000000] Root IRQ handler: gic_handle_irq
+[2025-09-07 09:08:42.103] [    0.000000] GICv3: GICv3 features: 16 PPIs
+[2025-09-07 09:08:42.103] [    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x00000000f9080000
+[2025-09-07 09:08:42.119] [    0.000000] ITS [mem 0xf9020000-0xf903ffff]
+[2025-09-07 09:08:42.119] [    0.000000] ITS@0x00000000f9020000: allocated 65536 Devices @800080000 (flat, esz 8, psz 64K, shr 0)
+[2025-09-07 09:08:42.134] [    0.000000] ITS: using cache flushing for cmd queue
+[2025-09-07 09:08:42.134] [    0.000000] GICv3: using LPI property table @0x0000000800040000
+[2025-09-07 09:08:42.134] [    0.000000] GIC: using cache flushing for LPI property table
+[2025-09-07 09:08:42.151] [    0.000000] GICv3: CPU0: using allocated LPI pending table @0x0000000800050000
+[2025-09-07 09:08:42.419] [    0.000000] ITS queue timeout (64 0)
+[2025-09-07 09:08:42.420] [    0.000000] ITS cmd its_build_mapc_cmd failed
+[2025-09-07 09:08:42.675] [    0.000000] ITS queue timeout (128 0)
+[2025-09-07 09:08:42.676] [    0.000000] ITS cmd its_build_invall_cmd failed
+[2025-09-07 09:08:42.676] [    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[2025-09-07 09:08:42.676] [    0.000000] arch_timer: cp15 timer(s) running at 100.00MHz (phys).
+[2025-09-07 09:08:42.676] [    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x171024e7e0, max_idle_ns: 440795205315 ns
+[2025-09-07 09:08:42.691] [    0.000000] sched_clock: 57 bits at 100MHz, resolution 10ns, wraps every 4398046511100ns
+[2025-09-07 09:08:42.708] [    0.008393] Console: colour dummy device 80x25
+[2025-09-07 09:08:42.708] [    0.012911] Calibrating delay loop (skipped), value calculated using timer frequency.. 200.00 BogoMIPS (lpj=400000)
+[2025-09-07 09:08:42.708] [    0.023474] pid_max: default: 32768 minimum: 301
+[2025-09-07 09:08:42.740] [    0.028250] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[2025-09-07 09:08:42.740] [    0.035936] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[2025-09-07 09:08:42.740] [    0.044649] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[2025-09-07 09:08:42.740] [    0.051488] rcu: Hierarchical SRCU implementation.
+[2025-09-07 09:08:42.770] [    0.056341] rcu: 	Max phase no-delay instances is 1000.
+[2025-09-07 09:08:42.770] [    0.061815] Platform MSI: msi-controller@f9020000 domain created
+[2025-09-07 09:08:42.770] [    0.067986] PCI/MSI: /axi/interrupt-controller@f9000000/msi-controller@f9020000 domain created
+[2025-09-07 09:08:42.774] [    0.076788] EFI services will not be available.
+[2025-09-07 09:08:42.774] [    0.081506] smp: Bringing up secondary CPUs ...
+[2025-09-07 09:08:45.234] [    0.086534] Detected PIPT I-cache on CPU1
+[2025-09-07 09:08:45.235] [    0.086583] GICv3: CPU1: found redistributor 1 region 0:0x00000000f90a0000
+[2025-09-07 09:08:45.235] [    0.086593] GICv3: CPU1: using allocated LPI pending table @0x0000000800060000
+[2025-09-07 09:08:45.239] [    1.304768] ITS queue timeout (192 0)
+[2025-09-07 09:08:45.239] [    1.304773] ITS cmd its_build_mapc_cmd failed
+[2025-09-07 09:08:45.239] [    2.522951] ITS queue timeout (256 0)
+[2025-09-07 09:08:45.267] [    2.522956] ITS cmd its_build_invall_cmd failed
+[2025-09-07 09:08:45.267] [    2.522979] CPU1: Booted secondary processor 0x0000000001 [0x410fd083]
+[2025-09-07 09:08:45.267] [    2.523051] smp: Brought up 1 node, 2 CPUs
+[2025-09-07 09:08:45.274] [    2.568454] SMP: Total of 2 processors activated.
+[2025-09-07 09:08:45.274] [    2.573210] CPU features: detected: 32-bit EL0 Support
+[2025-09-07 09:08:45.274] [    2.578405] CPU features: detected: CRC32 instructions
+[2025-09-07 09:08:45.274] [    2.583670] CPU: All CPU(s) started at EL2
+[2025-09-07 09:08:45.298] [    2.587816] alternatives: applying system-wide alternatives
+[2025-09-07 09:08:45.298] [    2.594775] devtmpfs: initialized
+[2025-09-07 09:08:45.301] [    2.603817] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[2025-09-07 09:08:45.302] [    2.613702] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[2025-09-07 09:08:45.329] [    2.623100] pinctrl core: initialized pinctrl subsystem
+[2025-09-07 09:08:45.329] [    2.628745] DMI not present or invalid.
+[2025-09-07 09:08:45.332] [    2.633099] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[2025-09-07 09:08:45.332] [    2.639631] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+[2025-09-07 09:08:45.332] [    2.647007] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[2025-09-07 09:08:45.362] [    2.655150] audit: initializing netlink subsys (disabled)
+[2025-09-07 09:08:45.362] [    2.660715] audit: type=2000 audit(2.572:1): state=initialized audit_enabled=0 res=1
+[2025-09-07 09:08:45.365] [    2.661100] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[2025-09-07 09:08:45.365] [    2.675456] ASID allocator initialised with 65536 entries
+[2025-09-07 09:08:45.392] [    2.681056] Serial: AMBA PL011 UART driver
+[2025-09-07 09:08:45.392] [    2.688066] platform axi: Fixed dependency cycle(s) with /axi/interrupt-controller@f9000000
+[2025-09-07 09:08:45.407] [    2.702217] Modules: 26624 pages in range for non-PLT usage
+[2025-09-07 09:08:45.407] [    2.702226] Modules: 518144 pages in range for PLT usage
+[2025-09-07 09:08:45.422] [    2.708390] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[2025-09-07 09:08:45.422] [    2.720640] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[2025-09-07 09:08:45.422] [    2.726981] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[2025-09-07 09:08:45.437] [    2.733846] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[2025-09-07 09:08:45.437] [    2.740188] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[2025-09-07 09:08:45.453] [    2.747052] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[2025-09-07 09:08:45.453] [    2.753391] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[2025-09-07 09:08:45.469] [    2.760255] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[2025-09-07 09:08:45.532] [    2.834650] raid6: neonx8   gen()  2885 MB/s
+[2025-09-07 09:08:45.613] [    2.907026] raid6: neonx4   gen()  2819 MB/s
+[2025-09-07 09:08:45.673] [    2.979395] raid6: neonx2   gen()  2334 MB/s
+[2025-09-07 09:08:45.753] [    3.051770] raid6: neonx1   gen()  1684 MB/s
+[2025-09-07 09:08:45.816] [    3.124153] raid6: int64x8  gen()  1612 MB/s
+[2025-09-07 09:08:45.895] [    3.196526] raid6: int64x4  gen()  1577 MB/s
+[2025-09-07 09:08:45.958] [    3.268900] raid6: int64x2  gen()  1532 MB/s
+[2025-09-07 09:08:46.037] [    3.341285] raid6: int64x1  gen()  1175 MB/s
+[2025-09-07 09:08:46.038] [    3.345601] raid6: using algorithm neonx8 gen() 2885 MB/s
+[2025-09-07 09:08:46.117] [    3.419113] raid6: .... xor() 2059 MB/s, rmw enabled
+[2025-09-07 09:08:46.117] [    3.424132] raid6: using neon recovery algorithm
+[2025-09-07 09:08:46.117] [    3.429371] iommu: Default domain type: Translated
+[2025-09-07 09:08:46.134] [    3.434223] iommu: DMA domain TLB invalidation policy: strict mode
+[2025-09-07 09:08:46.134] [    3.440667] SCSI subsystem initialized
+[2025-09-07 09:08:46.134] [    3.444608] usbcore: registered new interface driver usbfs
+[2025-09-07 09:08:46.148] [    3.450177] usbcore: registered new interface driver hub
+[2025-09-07 09:08:46.148] [    3.455571] usbcore: registered new device driver usb
+[2025-09-07 09:08:46.148] [    3.460761] mc: Linux media interface: v0.10
+[2025-09-07 09:08:46.164] [    3.465106] videodev: Linux video capture interface: v2.00
+[2025-09-07 09:08:46.164] [    3.470675] pps_core: LinuxPPS API ver. 1 registered
+[2025-09-07 09:08:46.164] [    3.475696] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[2025-09-07 09:08:46.196] [    3.484944] PTP clock support registered
+[2025-09-07 09:08:46.196] [    3.488928] EDAC MC: Ver: 3.0.0
+[2025-09-07 09:08:46.196] [    3.492320] scmi_core: SCMI protocol bus registered
+[2025-09-07 09:08:46.199] [    3.497505] FPGA manager framework
+[2025-09-07 09:08:46.199] [    3.501084] Advanced Linux Sound Architecture Driver Initialized.
+[2025-09-07 09:08:46.199] [    3.507635] Bluetooth: Core ver 2.22
+[2025-09-07 09:08:46.199] [    3.511282] NET: Registered PF_BLUETOOTH protocol family
+[2025-09-07 09:08:46.227] [    3.516656] Bluetooth: HCI device and connection manager initialized
+[2025-09-07 09:08:46.227] [    3.523085] Bluetooth: HCI socket layer initialized
+[2025-09-07 09:08:46.229] [    3.528018] Bluetooth: L2CAP socket layer initialized
+[2025-09-07 09:08:46.229] [    3.533133] Bluetooth: SCO socket layer initialized
+[2025-09-07 09:08:46.229] [    3.538394] clocksource: Switched to clocksource arch_sys_counter
+[2025-09-07 09:08:46.258] [    3.544719] VFS: Disk quotas dquot_6.6.0
+[2025-09-07 09:08:46.258] [    3.548710] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[2025-09-07 09:08:46.262] [    3.561072] NET: Registered PF_INET protocol family
+[2025-09-07 09:08:46.262] [    3.566287] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[2025-09-07 09:08:46.288] [    3.579140] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[2025-09-07 09:08:46.289] [    3.587835] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[2025-09-07 09:08:46.292] [    3.595679] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[2025-09-07 09:08:46.292] [    3.604117] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[2025-09-07 09:08:46.320] [    3.613202] TCP: Hash tables configured (established 65536 bind 65536)
+[2025-09-07 09:08:46.320] [    3.619901] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[2025-09-07 09:08:46.335] [    3.626948] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[2025-09-07 09:08:46.335] [    3.634531] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[2025-09-07 09:08:46.350] [    3.640570] RPC: Registered named UNIX socket transport module.
+[2025-09-07 09:08:46.350] [    3.646570] RPC: Registered udp transport module.
+[2025-09-07 09:08:46.350] [    3.651327] RPC: Registered tcp transport module.
+[2025-09-07 09:08:46.367] [    3.656083] RPC: Registered tcp-with-tls transport module.
+[2025-09-07 09:08:46.367] [    3.661629] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[2025-09-07 09:08:46.367] [    3.668150] PCI: CLS 0 bytes, default 64
+[2025-09-07 09:08:46.371] [    3.672301] Trying to unpack rootfs image as initramfs...
+[2025-09-07 09:08:46.371] [    3.679212] Initialise system trusted keyrings
+[2025-09-07 09:08:46.371] [    3.683897] workingset: timestamp_bits=46 max_order=21 bucket_order=0
+[2025-09-07 09:08:46.398] [    3.691020] NFS: Registering the id_resolver key type
+[2025-09-07 09:08:46.398] [    3.696176] Key type id_resolver registered
+[2025-09-07 09:08:46.398] [    3.700414] Key type id_legacy registered
+[2025-09-07 09:08:46.412] [    3.704492] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[2025-09-07 09:08:46.412] [    3.711277] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[2025-09-07 09:08:46.412] [    3.719019] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[2025-09-07 09:08:46.459] [    3.754973] NET: Registered PF_ALG protocol family
+[2025-09-07 09:08:46.459] [    3.759838] xor: measuring software checksum speed
+[2025-09-07 09:08:46.459] [    3.766805]    8regs           :  4645 MB/sec
+[2025-09-07 09:08:46.476] [    3.773168]    32regs          :  5028 MB/sec
+[2025-09-07 09:08:46.476] [    3.779967]    arm64_neon      :  4119 MB/sec
+[2025-09-07 09:08:46.491] [    3.784374] xor: using function: 32regs (5028 MB/sec)
+[2025-09-07 09:08:46.491] [    3.789497] Key type asymmetric registered
+[2025-09-07 09:08:46.491] [    3.793642] Asymmetric key parser 'x509' registered
+[2025-09-07 09:08:46.491] [    3.798636] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[2025-09-07 09:08:46.508] [    3.806128] io scheduler mq-deadline registered
+[2025-09-07 09:08:46.508] [    3.810717] io scheduler kyber registered
+[2025-09-07 09:08:46.508] [    3.814807] io scheduler bfq registered
+[2025-09-07 09:08:46.554] [    3.860520] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[2025-09-07 09:08:46.569] [    3.868310] Serial: AMBA driver
+[2025-09-07 09:08:46.569] [    3.877440] brd: module loaded
+[2025-09-07 09:08:46.585] [    3.883681] loop: module loaded
+[2025-09-07 09:08:46.585] [    3.890979] CAN device driver interface
+[2025-09-07 09:08:46.585] [    3.895470] usbcore: registered new interface driver asix
+[2025-09-07 09:08:46.602] [    3.900966] usbcore: registered new interface driver ax88179_178a
+[2025-09-07 09:08:46.602] [    3.907150] usbcore: registered new interface driver cdc_ether
+[2025-09-07 09:08:46.616] [    3.913076] usbcore: registered new interface driver net1080
+[2025-09-07 09:08:46.616] [    3.918820] usbcore: registered new interface driver cdc_subset
+[2025-09-07 09:08:46.616] [    3.924827] usbcore: registered new interface driver zaurus
+[2025-09-07 09:08:46.632] [    3.930505] usbcore: registered new interface driver cdc_ncm
+[2025-09-07 09:08:46.632] [    3.936250] usbcore: registered new interface driver r8153_ecm
+[2025-09-07 09:08:46.632] [    3.942464] VFIO - User Level meta-driver version: 0.3
+[2025-09-07 09:08:46.648] [    3.948228] usbcore: registered new interface driver uas
+[2025-09-07 09:08:46.648] [    3.953633] usbcore: registered new interface driver usb-storage
+[2025-09-07 09:08:46.649] [    3.959737] usbcore: registered new device driver onboard-usb-dev
+[2025-09-07 09:08:46.664] [    3.966426] i2c_dev: i2c /dev entries driver
+[2025-09-07 09:08:46.664] [    3.971298] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: /vcap_mipi_csi2_v_proc_ss_scaler/ports/port@0 initialization failed
+[2025-09-07 09:08:46.679] [    3.982758] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: DMA initialization failed
+[2025-09-07 09:08:46.694] [    3.991914] usbcore: registered new interface driver uvcvideo
+[2025-09-07 09:08:46.695] [    3.998350] Bluetooth: HCI UART driver ver 2.3
+[2025-09-07 09:08:46.695] [    4.002868] Bluetooth: HCI UART protocol H4 registered
+[2025-09-07 09:08:46.709] [    4.008072] Bluetooth: HCI UART protocol BCSP registered
+[2025-09-07 09:08:46.709] [    4.013474] Bluetooth: HCI UART protocol LL registered
+[2025-09-07 09:08:46.709] [    4.018673] Bluetooth: HCI UART protocol ATH3K registered
+[2025-09-07 09:08:46.724] [    4.024150] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[2025-09-07 09:08:46.724] [    4.030553] Bluetooth: HCI UART protocol Intel registered
+[2025-09-07 09:08:46.724] [    4.036031] Bluetooth: HCI UART protocol QCA registered
+[2025-09-07 09:08:46.740] [    4.041346] usbcore: registered new interface driver bcm203x
+[2025-09-07 09:08:46.740] [    4.047091] usbcore: registered new interface driver bpa10x
+[2025-09-07 09:08:46.740] [    4.052746] usbcore: registered new interface driver bfusb
+[2025-09-07 09:08:46.758] [    4.058312] usbcore: registered new interface driver btusb
+[2025-09-07 09:08:46.758] [    4.063906] usbcore: registered new interface driver ath3k
+[2025-09-07 09:08:46.758] [    4.069965] sdhci: Secure Digital Host Controller Interface driver
+[2025-09-07 09:08:46.773] [    4.076235] sdhci: Copyright(c) Pierre Ossman
+[2025-09-07 09:08:46.773] [    4.080648] sdhci-pltfm: SDHCI platform and OF driver helper
+[2025-09-07 09:08:46.773] [    4.086889] ledtrig-cpu: registered to indicate activity on CPUs
+[2025-09-07 09:08:46.788] [    4.093201] SMCCC: SOC_ID: ID = jep106:0049:0000 Revision = 0x00000000
+[2025-09-07 09:08:46.788] [    4.099944] zynqmp_firmware_probe Platform Management API v1.0
+[2025-09-07 09:08:46.804] [    4.105898] zynqmp_firmware_probe Trustzone version v1.0
+[2025-09-07 09:08:46.804] [    4.112544] xlnx_event_manager xlnx_event_manager: SGI 15 Registered over TF-A
+[2025-09-07 09:08:46.835] [    4.119874] xlnx_event_manager xlnx_event_manager: Xilinx Event Management driver probed
+[2025-09-07 09:08:46.881] [    4.182923] zynqmp-pinctrl firmware:versal-firmware:pinctrl: This is an experimental solution(hardcoded the MIO ID
+[2025-09-07 09:08:46.898] [    4.182923] information) and this solution will be deprecated and use PM interface
+[2025-09-07 09:08:46.901] [    4.182923] to get the MIO IDs information
+[2025-09-07 09:08:46.928] [    4.218923] securefw securefw: securefw probed
+[2025-09-07 09:08:46.929] [    4.223849] xilinx_ecdsa xilinx_ecdsa.0: will run requests pump with realtime priority
+[2025-09-07 09:08:46.932] [    4.232261] zynqmp-aes zynqmp-aes.0: will run requests pump with realtime priority
+[2025-09-07 09:08:46.933] [    4.240368] zynqmp_rsa zynqmp_rsa.0: RSA is not supported on the platform
+[2025-09-07 09:08:46.933] [    4.247352] usbcore: registered new interface driver usbhid
+[2025-09-07 09:08:46.960] [    4.252994] usbhid: USB HID core driver
+[2025-09-07 09:08:46.960] [    4.259242] ARM CCI_500 PMU driver probed
+[2025-09-07 09:08:46.960] [    4.259687] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[2025-09-07 09:08:46.964] [    4.273177] fpga_manager fpga0: Xilinx Versal FPGA Manager registered
+[2025-09-07 09:08:46.991] [    4.280584] pktgen: Packet Generator for packet performance testing. Version: 2.75
+[2025-09-07 09:08:46.992] [    4.290443] Initializing XFRM netlink socket
+[2025-09-07 09:08:46.992] [    4.294830] NET: Registered PF_INET6 protocol family
+[2025-09-07 09:08:47.006] [    4.300615] Segment Routing with IPv6
+[2025-09-07 09:08:47.006] [    4.304369] In-situ OAM (IOAM) with IPv6
+[2025-09-07 09:08:47.006] [    4.308431] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[2025-09-07 09:08:47.021] [    4.314839] NET: Registered PF_PACKET protocol family
+[2025-09-07 09:08:47.021] [    4.319966] NET: Registered PF_KEY protocol family
+[2025-09-07 09:08:47.021] [    4.324830] can: controller area network core
+[2025-09-07 09:08:47.037] [    4.329262] NET: Registered PF_CAN protocol family
+[2025-09-07 09:08:47.037] [    4.334110] can: raw protocol
+[2025-09-07 09:08:47.037] [    4.337113] can: broadcast manager protocol
+[2025-09-07 09:08:47.037] [    4.341346] can: netlink gateway - max_hops=1
+[2025-09-07 09:08:47.052] [    4.345901] Bluetooth: RFCOMM TTY layer initialized
+[2025-09-07 09:08:47.052] [    4.350853] Bluetooth: RFCOMM socket layer initialized
+[2025-09-07 09:08:47.052] [    4.356063] Bluetooth: RFCOMM ver 1.11
+[2025-09-07 09:08:47.053] [    4.359862] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[2025-09-07 09:08:47.067] [    4.365234] Bluetooth: BNEP filters: protocol multicast
+[2025-09-07 09:08:47.067] [    4.370523] Bluetooth: BNEP socket layer initialized
+[2025-09-07 09:08:47.067] [    4.375552] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[2025-09-07 09:08:47.083] [    4.381546] Bluetooth: HIDP socket layer initialized
+[2025-09-07 09:08:47.083] [    4.386603] 8021q: 802.1Q VLAN Support v1.8
+[2025-09-07 09:08:47.083] [    4.391057] 9pnet: Installing 9P2000 support
+[2025-09-07 09:08:47.098] [    4.395420] Key type dns_resolver registered
+[2025-09-07 09:08:47.098] [    4.399923] NET: Registered PF_VSOCK protocol family
+[2025-09-07 09:08:47.113] [    4.411904] registered taskstats version 1
+[2025-09-07 09:08:47.114] [    4.416057] Loading compiled-in X.509 certificates
+[2025-09-07 09:08:47.129] [    4.429138] Btrfs loaded, zoned=no, fsverity=no
+[2025-09-07 09:08:50.068] [    7.354229] Freeing initrd memory: 77416K
+[2025-09-07 09:08:50.402] [    7.697812] ff010000.serial: ttyAMA0 at MMIO 0xff010000 (irq = 18, base_baud = 0) is a PL011 rev3
+[2025-09-07 09:08:50.404] [    7.706833] printk: console [ttyAMA0] enabled
+[2025-09-07 09:08:50.404] [    7.706833] printk: console [ttyAMA0] enabled
+[2025-09-07 09:08:50.404] [    7.715591] printk: bootconsole [pl11] disabled
+[2025-09-07 09:08:50.430] [    7.715591] printk: bootconsole [pl11] disabled
+[2025-09-07 09:08:50.430] [    7.726461] of-fpga-region fpga-region: FPGA Region probed
+[2025-09-07 09:08:50.448] [    7.737040] spi-nor spi0.0: mt25qu512a (196608 Kbytes)
+[2025-09-07 09:08:50.449] [    7.742298] 3 fixed-partitions partitions found on MTD device spi0.0
+[2025-09-07 09:08:50.449] [    7.748657] Creating 3 MTD partitions on "spi0.0":
+[2025-09-07 09:08:50.451] [    7.753446] 0x000000000000-0x000000100000 : "qspi-boot"
+[2025-09-07 09:08:50.451] [    7.759531] 0x000000100000-0x000001700000 : "qspi-kernel"
+[2025-09-07 09:08:50.451] [    7.765677] 0x000001700000-0x000001740000 : "qspi-bootenv"
+[2025-09-07 09:08:50.480] [    7.778216] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[2025-09-07 09:08:50.480] [    7.783750] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[2025-09-07 09:08:50.483] [    7.791499] xhci-hcd xhci-hcd.0.auto: USB3 root hub has no ports
+[2025-09-07 09:08:50.483] [    7.797509] xhci-hcd xhci-hcd.0.auto: hcc params 0x0238fe65 hci version 0x110 quirks 0x0000008000000010
+[2025-09-07 09:08:50.513] [    7.806930] xhci-hcd xhci-hcd.0.auto: irq 31, io mem 0xfe200000
+[2025-09-07 09:08:50.513] [    7.813047] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.06
+[2025-09-07 09:08:50.516] [    7.821322] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[2025-09-07 09:08:50.516] [    7.828547] usb usb1: Product: xHCI Host Controller
+[2025-09-07 09:08:50.542] [    7.833424] usb usb1: Manufacturer: Linux 6.6.40-xilinx-g79e21eb1c72a xhci-hcd
+[2025-09-07 09:08:50.542] [    7.840648] usb usb1: SerialNumber: xhci-hcd.0.auto
+[2025-09-07 09:08:50.542] [    7.845909] hub 1-0:1.0: USB hub found
+[2025-09-07 09:08:50.548] [    7.849688] hub 1-0:1.0: 1 port detected
+[2025-09-07 09:08:50.548] [    7.854865] rtc_zynqmp f12a0000.rtc: registered as rtc0
+[2025-09-07 09:08:50.548] [    7.860128] rtc_zynqmp f12a0000.rtc: setting system clock to 1970-01-01T00:01:06 UTC (66)
+[2025-09-07 09:08:50.574] [    7.868540] cdns-i2c ff020000.i2c: can't get pinctrl, bus recovery not supported
+[2025-09-07 09:08:50.574] [    7.876468] pca954x 0-0070: supply vdd not found, using dummy regulator
+[2025-09-07 09:08:50.589] [    7.883652] i2c i2c-0: Added multiplexed i2c bus 5
+[2025-09-07 09:08:50.589] [    7.888615] i2c i2c-0: Added multiplexed i2c bus 6
+[2025-09-07 09:08:50.589] [    7.893576] i2c i2c-0: Added multiplexed i2c bus 7
+[2025-09-07 09:08:50.604] [    7.898553] i2c i2c-0: Added multiplexed i2c bus 8
+[2025-09-07 09:08:50.604] [    7.903502] i2c i2c-0: Added multiplexed i2c bus 9
+[2025-09-07 09:08:50.604] [    7.908450] i2c i2c-0: Added multiplexed i2c bus 10
+[2025-09-07 09:08:50.619] [    7.913505] i2c i2c-0: Added multiplexed i2c bus 11
+[2025-09-07 09:08:50.619] [    7.918544] i2c i2c-0: Added multiplexed i2c bus 12
+[2025-09-07 09:08:50.619] [    7.923437] pca954x 0-0070: registered 8 multiplexed busses for I2C switch pca9548
+[2025-09-07 09:08:50.636] [    7.931057] cdns-i2c ff020000.i2c: 100 kHz mmio ff020000 irq 34
+[2025-09-07 09:08:50.636] [    7.937218] cdns-i2c ff030000.i2c: can't get pinctrl, bus recovery not supported
+[2025-09-07 09:08:50.651] [    7.944963] cdns-i2c ff030000.i2c: 100 kHz mmio ff030000 irq 35
+[2025-09-07 09:08:50.651] [    7.951103] cdns-i2c f1000000.i2c: can't get pinctrl, bus recovery not supported
+[2025-09-07 09:08:50.651] [    7.958974] at24 13-0050: supply vcc not found, using dummy regulator
+[2025-09-07 09:08:50.667] [    7.966031] at24 13-0050: 256 byte 24aa025 EEPROM, writable, 1 bytes/write
+[2025-09-07 09:08:50.667] [    7.973013] cdns-i2c f1000000.i2c: 100 kHz mmio f1000000 irq 36
+[2025-09-07 09:08:50.681] [    7.980733] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: /vcap_mipi_csi2_v_proc_ss_scaler/ports/port@0 initialization failed
+[2025-09-07 09:08:50.698] [    7.992075] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: DMA initialization failed
+[2025-09-07 09:08:50.698] [    8.000154] xilinx-gamma-lut a4080000.v_gamma_lut: Xilinx 8-bit Video Gamma Correction LUT registered
+[2025-09-07 09:08:50.712] [    8.009905] cpufreq: cpufreq_online: CPU0: Running at unlisted initial frequency: 958333 KHz, changing to: 550000 KHz
+[2025-09-07 09:08:50.744] [    8.054427] mmc0: SDHCI controller on f1040000.mmc [f1040000.mmc] using ADMA 64-bit
+[2025-09-07 09:08:50.760] [    8.054820] mmc1: SDHCI controller on f1050000.mmc [f1050000.mmc] using ADMA 64-bit
+[2025-09-07 09:08:50.760] [    8.070872] macb ff0c0000.ethernet eth0: Cadence GEM rev 0x0107010b at 0xff0c0000 irq 40 (fc:0f:e7:ed:6c:eb)
+[2025-09-07 09:08:50.775] [    8.081180] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: /vcap_mipi_csi2_v_proc_ss_scaler/ports/port@0 initialization failed
+[2025-09-07 09:08:50.790] [    8.092539] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: DMA initialization failed
+[2025-09-07 09:08:50.790] [    8.100912] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: /vcap_mipi_csi2_v_proc_ss_scaler/ports/port@0 initialization failed
+[2025-09-07 09:08:50.807] [    8.112295] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: DMA initialization failed
+[2025-09-07 09:08:50.822] [    8.124985] of_cfs_init
+[2025-09-07 09:08:50.822] [    8.127497] of_cfs_init: OK
+[2025-09-07 09:08:50.822] [    8.130409] clk: Disabling unused clocks
+[2025-09-07 09:08:50.822] ERR XPmClock_CheckPermissions: 0x330D
+[2025-09-07 09:08:50.838] ERR XPm_IsAccessAllowed: 0x4601
+[2025-09-07 09:08:50.838] ALERT XPm_ProcessCmd: Error 0x7D2 while processing command 0x1000225
+[2025-09-07 09:08:50.838] ALERT XPm_ProcessCmd: Err Code: 0x7D2
+[2025-09-07 09:08:50.838] [25392.141]XPlmi_IpiDispatchHandler: Error: IPI command failed for Command ID: 0x1000225
+[2025-09-07 09:08:50.853] [25399.574]PLM Error Status: 0x222507D2
+[2025-09-07 09:08:50.853] ERR XPmClock_CheckPermissions: 0x330D
+[2025-09-07 09:08:50.853] ERR XPm_IsAccessAllowed: 0x4601
+[2025-09-07 09:08:50.868] ALERT XPm_ProcessCmd: Error 0x7D2 while processing command 0x1000225
+[2025-09-07 09:08:50.868] ALERT XPm_ProcessCmd: Err Code: 0x7D2
+[2025-09-07 09:08:50.868] [25417.887]XPlmi_IpiDispatchHandler: Error: IPI command failed for Command ID: 0x1000225
+[2025-09-07 09:08:50.884] [25425.317]PLM Error Status: 0x222507D2
+[2025-09-07 09:08:50.884] [    8.186966] mmc1: new high speed SDXC card at address aaaa
+[2025-09-07 09:08:50.884] [    8.187038] ALSA device list:
+[2025-09-07 09:08:50.884] [    8.195117] mmcblk1: mmc1:aaaa SN64G 59.5 GiB
+[2025-09-07 09:08:50.914] [    8.197335]   No soundcards found.
+[2025-09-07 09:08:50.914] [    8.205997] uart-pl011 ff010000.serial: no DMA platform data
+[2025-09-07 09:08:50.914] [    8.207480]  mmcblk1: p1 p2
+[2025-09-07 09:08:50.914] [    8.215558] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: /vcap_mipi_csi2_v_proc_ss_scaler/ports/port@0 initialization failed
+[2025-09-07 09:08:50.919] [    8.216674] Freeing unused kernel memory: 2880K
+[2025-09-07 09:08:50.919] [    8.226934] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: DMA initialization failed
+[2025-09-07 09:08:50.946] [    8.231869] Run /init as init process
+[2025-09-07 09:08:50.976] [    8.270201] systemd[1]: System time before build time, advancing clock.
+[2025-09-07 09:08:50.980] [    8.286194] systemd[1]: systemd 255.4^ running in system mode (+PAM -AUDIT -SELINUX -APPARMOR +IMA -SMACK +SECCOMP -GCRYPT -GNUTLS +OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP +LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB +ZSTD -BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[2025-09-07 09:08:51.012] [    8.318431] systemd[1]: Detected architecture arm64.
+[2025-09-07 09:08:51.012] 
+[2025-09-07 09:08:51.012] Welcome to PetaLinux 2024.2+release-S11061705 (scarthgap)!
+[2025-09-07 09:08:51.042] 
+[2025-09-07 09:08:51.042] [    8.330874] mmc0: new HS200 MMC card at address 0001
+[2025-09-07 09:08:51.042] [    8.336907] mmcblk0: mmc0:0001 DG4032 29.1 GiB
+[2025-09-07 09:08:51.042] [    8.342457] systemd[1]: Hostname set to <Trenz>.
+[2025-09-07 09:08:51.047] [    8.348565] mmcblk0boot0: mmc0:0001 DG4032 4.00 MiB
+[2025-09-07 09:08:51.047] [    8.354242] systemd[1]: Initializing machine ID from random generator.
+[2025-09-07 09:08:51.071] [    8.361773] mmcblk0boot1: mmc0:0001 DG4032 4.00 MiB
+[2025-09-07 09:08:51.071] [    8.371490] mmcblk0rpmb: mmc0:0001 DG4032 4.00 MiB, chardev (240:0)
+[2025-09-07 09:08:51.086] [    8.378754] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: /vcap_mipi_csi2_v_proc_ss_scaler/ports/port@0 initialization failed
+[2025-09-07 09:08:51.086] [    8.390122] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: DMA initialization failed
+[2025-09-07 09:08:51.567] [    8.871649] systemd[1]: Queued start job for default target Multi-User System.
+[2025-09-07 09:08:51.596] [    8.899986] systemd[1]: Created slice Slice /system/getty.
+[2025-09-07 09:08:51.616] [  OK  ] Created slice Slice /system/getty.
+[2025-09-07 09:08:51.620] [    8.924748] systemd[1]: Created slice Slice /system/modprobe.
+[2025-09-07 09:08:51.620] [  OK  ] Created slice Slice /system/modprobe.
+[2025-09-07 09:08:51.647] [    8.948711] systemd[1]: Created slice Slice /system/serial-getty.
+[2025-09-07 09:08:51.662] [  OK  ] Created slice Slice /system/serial-getty.
+[2025-09-07 09:08:51.667] [    8.972201] systemd[1]: Created slice User and Session Slice.
+[2025-09-07 09:08:51.667] [  OK  ] Created slice User and Session Slice.
+[2025-09-07 09:08:51.693] [    8.994958] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[2025-09-07 09:08:51.708] [  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+[2025-09-07 09:08:51.725] [    9.022868] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[2025-09-07 09:08:51.726] [  OK  ] Started Forward Password Requests to Wall Directory Watch.
+[2025-09-07 09:08:51.742] [    9.046748] systemd[1]: Reached target Path Units.
+[2025-09-07 09:08:51.756] [  OK  ] Reached target Path Units.
+[2025-09-07 09:08:51.771] [    9.066626] systemd[1]: Reached target Remote File Systems.
+[2025-09-07 09:08:51.771] [  OK  ] Reached target Remote File Systems.
+[2025-09-07 09:08:51.786] [    9.086614] systemd[1]: Reached target Slice Units.
+[2025-09-07 09:08:51.787] [  OK  ] Reached target Slice Units.
+[2025-09-07 09:08:51.804] [    9.106624] systemd[1]: Reached target Swaps.
+[2025-09-07 09:08:51.804] [  OK  ] Reached target Swaps.
+[2025-09-07 09:08:51.818] [    9.123520] systemd[1]: Listening on RPCbind Server Activation Socket.
+[2025-09-07 09:08:51.834] [  OK  ] Listening on RPCbind Server Activation Socket.
+[2025-09-07 09:08:51.849] [    9.146644] systemd[1]: Reached target RPC Port Mapper.
+[2025-09-07 09:08:51.849] [  OK  ] Reached target RPC Port Mapper.
+[2025-09-07 09:08:51.865] [    9.167339] systemd[1]: Listening on Syslog Socket.
+[2025-09-07 09:08:51.865] [  OK  ] Listening on Syslog Socket.
+[2025-09-07 09:08:51.881] [    9.186985] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[2025-09-07 09:08:51.896] [  OK  ] Listening on initctl Compatibility Named Pipe.
+[2025-09-07 09:08:51.912] [    9.211838] systemd[1]: Listening on Journal Audit Socket.
+[2025-09-07 09:08:51.912] [  OK  ] Listening on Journal Audit Socket.
+[2025-09-07 09:08:51.927] [    9.231232] systemd[1]: Listening on Journal Socket (/dev/log).
+[2025-09-07 09:08:51.927] [  OK  ] Listening on Journal Socket (/dev/log).
+[2025-09-07 09:08:51.946] [    9.251451] systemd[1]: Listening on Journal Socket.
+[2025-09-07 09:08:51.960] [  OK  ] Listening on Journal Socket.
+[2025-09-07 09:08:51.960] [    9.271464] systemd[1]: Listening on Network Service Netlink Socket.
+[2025-09-07 09:08:51.975] [  OK  ] Listening on Network Service Netlink Socket.
+[2025-09-07 09:08:51.990] [    9.295468] systemd[1]: Listening on udev Control Socket.
+[2025-09-07 09:08:51.991] [  OK  ] Listening on udev Control Socket.
+[2025-09-07 09:08:52.006] [    9.315209] systemd[1]: Listening on udev Kernel Socket.
+[2025-09-07 09:08:52.021] [  OK  ] Listening on udev Kernel Socket.
+[2025-09-07 09:08:52.021] [    9.335240] systemd[1]: Listening on User Database Manager Socket.
+[2025-09-07 09:08:52.037] [  OK  ] Listening on User Database Manager Socket.
+[2025-09-07 09:08:52.067] [    9.382749] systemd[1]: Mounting Huge Pages File System...
+[2025-09-07 09:08:52.083]          Mounting Huge Pages File System...
+[2025-09-07 09:08:52.115] [    9.407270] systemd[1]: Mounting POSIX Message Queue File System...
+[2025-09-07 09:08:52.116]          Mounting POSIX Message Queue File System...
+[2025-09-07 09:08:52.162] [    9.450788] systemd[1]: Mounting Kernel Debug File System...
+[2025-09-07 09:08:52.163]          Mounting Kernel Debug File System...
+[2025-09-07 09:08:52.167] [    9.479082] systemd[1]: Kernel Trace File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/tracing).
+[2025-09-07 09:08:52.198] [    9.496194] systemd[1]: Mounting Temporary Directory /tmp...
+[2025-09-07 09:08:52.199]          Mounting Temporary Directory /tmp...
+[2025-09-07 09:08:52.240] [    9.543160] systemd[1]: Starting Create List of Static Device Nodes...
+[2025-09-07 09:08:52.256]          Starting Create List of Static Device Nodes...
+[2025-09-07 09:08:52.302] [    9.599083] systemd[1]: Starting Load Kernel Module configfs...
+[2025-09-07 09:08:52.302]          Starting Load Kernel Module configfs...
+[2025-09-07 09:08:52.333] [    9.631302] systemd[1]: Starting Load Kernel Module dm_mod...
+[2025-09-07 09:08:52.333]          Starting Load Kernel Module dm_mod...
+[2025-09-07 09:08:52.381] [    9.679078] systemd[1]: Starting Load Kernel Module drm...
+[2025-09-07 09:08:52.396]          Starting Load Kernel Module drm...
+[2025-09-07 09:08:52.412] [    9.707842] systemd[1]: Starting Load Kernel Module fuse...
+[2025-09-07 09:08:52.412]          Starting Load Kernel Module fuse...
+[2025-09-07 09:08:52.428] [    9.735229] systemd[1]: Starting Load Kernel Module loop...
+[2025-09-07 09:08:52.443]          Starting Load Kernel Module loop...
+[2025-09-07 09:08:52.490] [    9.790184] systemd[1]: Starting RPC Bind...
+[2025-09-07 09:08:52.491]          Starting RPC Bind...
+[2025-09-07 09:08:52.506] [    9.814805] systemd[1]: File System Check on Root Device was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/).
+[2025-09-07 09:08:52.522] [    9.828063] systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[2025-09-07 09:08:52.537] [    9.841102] systemd[1]: systemd-journald.service: (This warning is only shown for the first unit using IP firewalling.)
+[2025-09-07 09:08:52.583] [    9.887068] systemd[1]: Starting Journal Service...
+[2025-09-07 09:08:52.584]          Starting Journal Service...
+[2025-09-07 09:08:52.645] [    9.951154] systemd[1]: Starting Load Kernel Modules...
+[2025-09-07 09:08:52.661]          Starting Load Kernel Modules...
+[2025-09-07 09:08:52.677] [    9.981026] systemd-journald[197]: Collecting audit messages is enabled.
+[2025-09-07 09:08:52.678] [    9.988211] openvswitch: Open vSwitch switching datapath
+[2025-09-07 09:08:52.707] [   10.015607] systemd[1]: Starting Generate network units from Kernel command line...
+[2025-09-07 09:08:52.739]          Starting Generate network units from Kernel command line...
+[2025-09-07 09:08:52.770] [   10.058673] systemd[1]: Starting Remount Root and Kernel File Systems...
+[2025-09-07 09:08:52.771]          Starting Remount Root and Kernel File Systems...
+[2025-09-07 09:08:52.816] [   10.107218] systemd[1]: Starting Coldplug All udev Devices...
+[2025-09-07 09:08:52.817]          Starting Coldplug All udev Devices...
+[2025-09-07 09:08:52.863] [   10.162762] systemd[1]: Started RPC Bind.
+[2025-09-07 09:08:52.878] [  OK  ] Started RPC Bind.
+[2025-09-07 09:08:52.894] [   10.192504] systemd[1]: Started Journal Service.
+[2025-09-07 09:08:52.894] [  OK  ] Started Journal Service.
+[2025-09-07 09:08:52.925] [  OK  ] Mounted Huge Pages File System.
+[2025-09-07 09:08:52.941] [  OK  ] Mounted POSIX Message Queue File System.
+[2025-09-07 09:08:52.956] [  OK  ] Mounted Kernel Debug File System.
+[2025-09-07 09:08:52.987] [  OK  ] Mounted Temporary Directory /tmp.
+[2025-09-07 09:08:53.003] [  OK  ] Finished Create List of Static Device Nodes.
+[2025-09-07 09:08:53.018] [  OK  ] Finished Load Kernel Module configfs.
+[2025-09-07 09:08:53.034] [  OK  ] Finished Load Kernel Module dm_mod.
+[2025-09-07 09:08:53.050] [  OK  ] Finished Load Kernel Module drm.
+[2025-09-07 09:08:53.066] [  OK  ] Finished Load Kernel Module fuse.
+[2025-09-07 09:08:53.081] [  OK  ] Finished Load Kernel Module loop.
+[2025-09-07 09:08:53.097] [  OK  ] Finished Load Kernel Modules.
+[2025-09-07 09:08:53.127] [  OK  ] Finished Generate network units from Kernel command line.
+[2025-09-07 09:08:53.143] [  OK  ] Finished Remount Root and Kernel File Systems.
+[2025-09-07 09:08:53.205] [  OK  ] Reached target Preparation for Network.
+[2025-09-07 09:08:53.253]          Mounting NFSD configuration filesystem...
+[2025-09-07 09:08:53.300]          Mounting Kernel Configuration File System...
+[2025-09-07 09:08:53.362]          Starting Flush Journal to Persistent Storage...
+[2025-09-07 09:08:53.393]          Starting Apply Kernel Variables...
+[2025-09-07 09:08:53.439]          Starting Create[   10.732314] systemd-journald[197]: Received client request to flush runtime journal.
+[2025-09-07 09:08:53.444]  Static Device Nodes in /dev gracefully...
+[2025-09-07 09:08:53.470] [  OK  ] Mounted NFSD configuration filesystem.
+[2025-09-07 09:08:53.486] [  OK  ] Mounted Kernel Configuration File System.
+[2025-09-07 09:08:53.501] [  OK  ] Finished Flush Journal to Persistent Storage.
+[2025-09-07 09:08:53.547] [  OK  ] Finished Apply Kernel Variables.
+[2025-09-07 09:08:53.565] [  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+[2025-09-07 09:08:53.639]          Starting Create System Users...
+[2025-09-07 09:08:53.701]          Starting User Database Manager...
+[2025-09-07 09:08:53.922] [  OK  ] Started User Database Manager.
+[2025-09-07 09:08:53.969] [  OK  ] Finished Create System Users.
+[2025-09-07 09:08:54.015]          Starting Create Static Device Nodes in /dev...
+[2025-09-07 09:08:54.108] [  OK  ] Finished Create Static Device Nodes in /dev.
+[2025-09-07 09:08:54.124] [  OK  ] Reached target Preparation for Local File Systems.
+[2025-09-07 09:08:54.170]          Mounting /var/volatile...
+[2025-09-07 09:08:54.202]          Starting Rule-based Manager for Device Events and Files...
+[2025-09-07 09:08:54.233] [  OK  ] Mounted /var/volatile.
+[2025-09-07 09:08:54.279]          Starting Load/Save OS Random Seed...
+[2025-09-07 09:08:54.310] [  OK  ] Reached target Local File Systems.
+[2025-09-07 09:08:54.340]          Starting Rebuild Dynamic Linker Cache...
+[2025-09-07 09:08:54.372]          Starting Create Volatile Files and Directories...
+[2025-09-07 09:08:54.530] [  OK  ] Finished Rebuild Dynamic Linker Cache.
+[2025-09-07 09:08:54.609] [  OK  ] Started Rule-based Manager for Device Events and Files.
+[2025-09-07 09:08:54.656]          Starting Network Configuration...
+[2025-09-07 09:08:54.688] [  OK  ] Finished Create Volatile Files and Directories.
+[2025-09-07 09:08:54.750]          Starting Rebuild Journal Catalog...
+[2025-09-07 09:08:54.813]          Starting Network Name Resolution...
+[2025-09-07 09:08:54.893]          Starting Network Time Synchronization...
+[2025-09-07 09:08:54.971]          Starting Record System Boot/Shutdown in UTMP...
+[2025-09-07 09:08:56.004] [   13.291526] macb ff0c0000.ethernet end0: renamed from eth0
+[2025-09-07 09:08:56.067] [  OK  ] Finished Rebuild Journal Catalog.
+[2025-09-07 09:08:56.129] [   13.430467] random: crng init done
+[2025-09-07 09:08:56.269] [  OK  ] Finished Load/Save OS Random Seed.
+[2025-09-07 09:08:56.349] [  OK  ] Finished Record System Boot/Shutdown in UTMP.
+[2025-09-07 09:08:56.540] [  OK  ] Finished Coldplug All udev Devices.
+[2025-09-07 09:08:57.092] [   14.394628] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[2025-09-07 09:08:57.521] [  OK  ] Started Network Name Resolution.
+[2025-09-07 09:08:57.568] [   14.855901] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[2025-09-07 09:08:57.598] [   14.903484] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[2025-09-07 09:08:57.615] [   14.911112] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[2025-09-07 09:08:57.629] [   14.919829] cfg80211: failed to load regulatory.db
+[2025-09-07 09:08:57.661] [  OK  ] Started Network Time Synchronization.
+[2025-09-07 09:08:57.866] [  OK  ] Started Network Configuration.
+[2025-09-07 09:08:58.824] [   16.126723] macb ff0c0000.ethernet end0: PHY [ff0c0000.ethernet-ffffffff:01] driver [Marvell 88E1510] (irq=POLL)
+[2025-09-07 09:08:58.840] [   16.137010] macb ff0c0000.ethernet end0: configuring for phy/rgmii-id link mode
+[2025-09-07 09:08:58.887] [   16.186293] pps pps0: new PPS source ptp0
+[2025-09-07 09:08:58.919] [   16.225738] macb ff0c0000.ethernet: gem-ptp-timer ptp clock registered.
+[2025-09-07 09:09:01.693] [  OK  ] Created slice Slice /system/systemd-fsck.
+[2025-09-07 09:09:01.708] [  OK  ] Reached target Network.
+[2025-09-07 09:09:01.709] [  OK  ] Reached target Host and Network Name Lookups.
+[2025-09-07 09:09:01.725] [  OK  ] Reached target System Time Set.
+[2025-09-07 09:09:01.755] [  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[2025-09-07 09:09:01.800]          Starting File System Check on /dev/mmcblk1p1...
+[2025-09-07 09:09:01.816]          Starting File System Check on /dev/mmcblk1p2...
+[2025-09-07 09:09:01.864]          Starting Update is Completed...
+[2025-09-07 09:09:01.880]          Starting Virtual Console Setup...
+[2025-09-07 09:09:01.898] [  OK  ] Finished File System Check on /dev/mmcblk1p1.
+[2025-09-07 09:09:01.914] [  OK  ] Finished File System Check on /dev/mmcblk1p2.
+[2025-09-07 09:09:01.928] [  OK  ] Finished Update is Completed.
+[2025-09-07 09:09:01.959]          Mounting /run/media/BOOT-mmcblk1p1...
+[2025-09-07 09:09:02.006]          Mounting /run/media/ROOTFS-mmcblk1p2...
+[2025-09-07 09:09:02.053] [  OK  ] Finished Virtual Console Setup.
+[2025-09-07 09:09:02.069] [  OK  ] Reached target System Initialization.
+[2025-09-07 09:09:02.085] [  OK  ] Started Daily Cleanup of Temporary Directories.
+[2025-09-07 09:09:02.102] [  OK  ] Reached target Timer Units.
+[2025-09-07 09:09:02.117] [  OK  ] Listening on D-Bus System Message Bus Socket.
+[2025-09-07 09:09:02.162] [  OK  ] Listening on [   19.450637] FAT-fs (mmcblk1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[2025-09-07 09:09:02.163] dropbear.socket.
+[2025-09-07 09:09:02.166] [   19.453742] FAT-fs (mmcblk1p2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[2025-09-07 09:09:02.166] [  OK  ] Reached target Socket Units.
+[2025-09-07 09:09:02.195] [  OK  ] Reached target Basic System.
+[2025-09-07 09:09:02.242] [  OK  ] Started Kernel Logging Service.
+[2025-09-07 09:09:02.246] [  OK  ] Started System Logging Service.
+[2025-09-07 09:09:02.319]          Starting D-Bus System Message Bus...
+[2025-09-07 09:09:02.324]          Starting User Login Management...
+[2025-09-07 09:09:02.383]          Starting Permit User Sessions...
+[2025-09-07 09:09:02.414]          Starting Target Communication Framework agent...
+[2025-09-07 09:09:02.446] [  OK  ] Started D-Bus System Message Bus.
+[2025-09-07 09:09:02.478] [  OK  ] Mounted /run/media/BOOT-mmcblk1p1.
+[2025-09-07 09:09:02.493] [  OK  ] Mounted /run/media/ROOTFS-mmcblk1p2.
+[2025-09-07 09:09:02.524] [  OK  ] Finished Permit User Sessions.
+[2025-09-07 09:09:02.540] [  OK  ] Started Target Communication Framework agent.
+[2025-09-07 09:09:02.604] [  OK  ] Started Getty on tty1.
+[2025-09-07 09:09:02.652] [  OK  ] Started Serial Getty on ttyAMA0.
+[2025-09-07 09:09:02.654] [  OK  ] Reached target Login Prompts.
+[2025-09-07 09:09:02.668] [  OK  ] Started User Login Management.
+[2025-09-07 09:09:02.700] [  OK  ] Reached target Multi-User System.
+[2025-09-07 09:09:02.748]          Starting Record Runlevel Change in UTMP...
+[2025-09-07 09:09:02.780] [  OK  ] Finished Record Runlevel Change in UTMP.
+[2025-09-07 09:09:02.828] 
+[2025-09-07 09:09:02.828] ********************************************************************************************
+[2025-09-07 09:09:02.844] The PetaLinux source code and images provided/generated are for demonstration purposes only.
+[2025-09-07 09:09:02.844] Please refer to https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2741928025/Moving+from+PetaLinux+to+Production+Deployment
+[2025-09-07 09:09:02.860] for more details.
+[2025-09-07 09:09:02.860] ********************************************************************************************
+[2025-09-07 09:09:02.860] PetaLinux 2024.2+release-S11061705 Trenz ttyAMA0
+[2025-09-07 09:09:02.876] 
+[2025-09-07 09:09:02.876] Trenz login: root (automatic login)
+[2025-09-07 09:09:02.876] 
+[2025-09-07 09:09:03.048] [   20.356266] audit: type=1006 audit(1709054776.084:2): pid=690 uid=0 old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=1 res=1
+[2025-09-07 09:09:03.065] [   20.368612] audit: type=1300 audit(1709054776.084:2): arch=c00000b7 syscall=64 success=yes exit=1 a0=8 a1=ffffd6953e10 a2=1 a3=1 items=0 ppid=1 pid=690 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="(systemd)" exe="/usr/lib/systemd/systemd-executor" key=(null)
+[2025-09-07 09:09:03.095] [   20.395123] audit: type=1327 audit(1709054776.084:2): proctitle="(systemd)"
+[2025-09-07 09:09:05.100] [   22.406860] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: /vcap_mipi_csi2_v_proc_ss_scaler/ports/port@0 initialization failed
+[2025-09-07 09:09:05.117] [   22.418231] xilinx-video vcap_mipi_csi2_v_proc_ss_scaler: DMA initialization failed
+[2025-09-07 09:09:05.129] [   22.426147] platform vcap_mipi_csi2_v_proc_ss_scaler: deferred probe pending
+[2025-09-07 09:09:05.893] root@Trenz:~# 
+[2025-09-07 10:06:19.468] root@Trenz:~# 
+[2025-09-07 10:06:19.613] root@Trenz:~# pwd
+[2025-09-07 11:05:23.191] /root
+[2025-09-07 11:05:23.208] root@Trenz:~# ls
+[2025-09-07 11:05:23.735] root@Trenz:~# cd /dev
+[2025-09-07 11:05:27.559] root@Trenz:/dev# ls
+[2025-09-07 11:05:28.793] autofs              ptycc               ptyu3               tty0                ttyd2               ttyu9
+[2025-09-07 11:05:28.809] block               ptycd               ptyu4               tty1                ttyd3               ttyua
+[2025-09-07 11:05:28.809] btrfs-control       ptyce               ptyu5               tty10               ttyd4               ttyub
+[2025-09-07 11:05:28.826] bus                 ptycf               ptyu6               tty11               ttyd5               ttyuc
+[2025-09-07 11:05:28.840] char                ptyd0               ptyu7               tty12               ttyd6               ttyud
+[2025-09-07 11:05:28.840] console             ptyd1               ptyu8               tty13               ttyd7               ttyue
+[2025-09-07 11:05:28.855] disk                ptyd2               ptyu9               tty14               ttyd8               ttyuf
+[2025-09-07 11:05:28.855] dma_heap            ptyd3               ptyua               tty15               ttyd9               ttyv0
+[2025-09-07 11:05:28.873] fd                  ptyd4               ptyub               tty16               ttyda               ttyv1
+[2025-09-07 11:05:28.873] fpga0               ptyd5               ptyuc               tty17               ttydb               ttyv2
+[2025-09-07 11:05:28.888] full                ptyd6               ptyud               tty18               ttydc               ttyv3
+[2025-09-07 11:05:28.903] gpiochip0           ptyd7               ptyue               tty19               ttydd               ttyv4
+[2025-09-07 11:05:28.903] gpiochip1           ptyd8               ptyuf               tty2                ttyde               ttyv5
+[2025-09-07 11:05:28.919] gpiochip2           ptyd9               ptyv0               tty20               ttydf               ttyv6
+[2025-09-07 11:05:28.919] gpiochip3           ptyda               ptyv1               tty21               ttye0               ttyv7
+[2025-09-07 11:05:28.938] gpiochip4           ptydb               ptyv2               tty22               ttye1               ttyv8
+[2025-09-07 11:05:28.953] gpiochip5           ptydc               ptyv3               tty23               ttye2               ttyv9
+[2025-09-07 11:05:28.954] gpiochip6           ptydd               ptyv4               tty24               ttye3               ttyva
+[2025-09-07 11:05:28.968] gpiochip7           ptyde               ptyv5               tty25               ttye4               ttyvb
+[2025-09-07 11:05:28.968] gpiochip8           ptydf               ptyv6               tty26               ttye5               ttyvc
+[2025-09-07 11:05:28.983] hugepages           ptye0               ptyv7               tty27               ttye6               ttyvd
+[2025-09-07 11:05:28.983] hwrng               ptye1               ptyv8               tty28               ttye7               ttyve
+[2025-09-07 11:05:29.000] i2c-0               ptye2               ptyv9               tty29               ttye8               ttyvf
+[2025-09-07 11:05:29.016] i2c-1               ptye3               ptyva               tty3                ttye9               ttyw0
+[2025-09-07 11:05:29.016] i2c-10              ptye4               ptyvb               tty30               ttyea               ttyw1
+[2025-09-07 11:05:29.033] i2c-11              ptye5               ptyvc               tty31               ttyeb               ttyw2
+[2025-09-07 11:05:29.033] i2c-12              ptye6               ptyvd               tty32               ttyec               ttyw3
+[2025-09-07 11:05:29.047] i2c-13              ptye7               ptyve               tty33               ttyed               ttyw4
+[2025-09-07 11:05:29.047] i2c-2               ptye8               ptyvf               tty34               ttyee               ttyw5
+[2025-09-07 11:05:29.066] i2c-3               ptye9               ptyw0               tty35               ttyef               ttyw6
+[2025-09-07 11:05:29.081] i2c-4               ptyea               ptyw1               tty36               ttyp0               ttyw7
+[2025-09-07 11:05:29.081] i2c-5               ptyeb               ptyw2               tty37               ttyp1               ttyw8
+[2025-09-07 11:05:29.095] i2c-6               ptyec               ptyw3               tty38               ttyp2               ttyw9
+[2025-09-07 11:05:29.096] i2c-7               ptyed               ptyw4               tty39               ttyp3               ttywa
+[2025-09-07 11:05:29.113] i2c-8               ptyee               ptyw5               tty4                ttyp4               ttywb
+[2025-09-07 11:05:29.127] i2c-9               ptyef               ptyw6               tty40               ttyp5               ttywc
+[2025-09-07 11:05:29.127] iio:device0         ptyp0               ptyw7               tty41               ttyp6               ttywd
+[2025-09-07 11:05:29.143] initctl             ptyp1               ptyw8               tty42               ttyp7               ttywe
+[2025-09-07 11:05:29.143] kmsg                ptyp2               ptyw9               tty43       cd        ttyp8               ttywf
+[2025-09-07 11:05:29.162] log                 ptyp3               ptywa               tty44               ttyp9               ttyx0
+[2025-09-07 11:05:29.162] loop-control        ptyp4               ptywb               tty45               ttypa               ttyx1
+[2025-09-07 11:05:29.177] loop0               ptyp5               ptywc               tty46               ttypb               ttyx2
+[2025-09-07 11:05:29.192] loop1               ptyp6               ptywd               tty47               ttypc               ttyx3
+[2025-09-07 11:05:29.192] loop2               ptyp7               ptywe               tty48               ttypd               ttyx4
+[2025-09-07 11:05:29.207] loop3               ptyp8               ptywf               tty49               ttype               ttyx5
+[2025-09-07 11:05:29.207] loop4               ptyp9               ptyx0               tty5                ttypf               ttyx6
+[2025-09-07 11:05:29.224] loop5               ptypa               ptyx1               tty50               ttyq0               ttyx7
+[2025-09-07 11:05:29.240] loop6               ptypb               ptyx2               tty51               ttyq1               ttyx8
+[2025-09-07 11:05:29.240] loop7               ptypc               ptyx3               tty52               ttyq2               ttyx9
+[2025-09-07 11:05:29.256] mem                 ptypd               ptyx4               tty53               ttyq3               ttyxa
+[2025-09-07 11:05:29.256] mmcblk0             ptype               ptyx5               tty54               ttyq4               ttyxb
+[2025-09-07 11:05:29.272] mmcblk0boot0        ptypf               ptyx6               tty55               ttyq5               ttyxc
+[2025-09-07 11:05:29.272] mmcblk0boot1        ptyq0               ptyx7               tty56               ttyq6               ttyxd
+[2025-09-07 11:05:29.288] mmcblk0rpmb         ptyq1               ptyx8               tty57               ttyq7               ttyxe
+[2025-09-07 11:05:29.305] mmcblk1             ptyq2               ptyx9               tty58               ttyq8               ttyxf
+[2025-09-07 11:05:29.305] mmcblk1p1           ptyq3               ptyxa               tty59               ttyq9               ttyy0
+[2025-09-07 11:05:29.321] mmcblk1p2           ptyq4               ptyxb               tty6                ttyqa               ttyy1
+[2025-09-07 11:05:29.321] mqueue              ptyq5               ptyxc               tty60               ttyqb               ttyy2
+[2025-09-07 11:05:29.336] mtd                 ptyq6               ptyxd               tty61               ttyqc               ttyy3
+[2025-09-07 11:05:29.336] mtd0                ptyq7               ptyxe               tty62               ttyqd               ttyy4
+[2025-09-07 11:05:29.355] mtd0ro              ptyq8               ptyxf               tty63               ttyqe               ttyy5
+[2025-09-07 11:05:29.368] mtd1                ptyq9               ptyy0               tty7                ttyqf               ttyy6
+[2025-09-07 11:05:29.368] mtd1ro              ptyqa               ptyy1               tty8                ttyr0               ttyy7
+[2025-09-07 11:05:29.383] mtd2                ptyqb               ptyy2               tty9                ttyr1               ttyy8
+[2025-09-07 11:05:29.383] mtd2ro              ptyqc               ptyy3               ttyAMA0             ttyr2               ttyy9
+[2025-09-07 11:05:29.402] mtdblock0           ptyqd               ptyy4               ttyS0               ttyr3               ttyya
+[2025-09-07 11:05:29.417] mtdblock1           ptyqe               ptyy5               ttyS1               ttyr4               ttyyb
+[2025-09-07 11:05:29.417] mtdblock2           ptyqf               ptyy6               ttyS2               ttyr5               ttyyc
+[2025-09-07 11:05:29.432] net                 ptyr0               ptyy7               ttyS3               ttyr6               ttyyd
+[2025-09-07 11:05:29.432] null                ptyr1               ptyy8               ttya0               ttyr7               ttyye
+[2025-09-07 11:05:29.449] port                ptyr2               ptyy9               ttya1               ttyr8               ttyyf
+[2025-09-07 11:05:29.449] pps0                ptyr3               ptyya               ttya2               ttyr9               ttyz0
+[2025-09-07 11:05:29.463] ptmx                ptyr4               ptyyb               ttya3               ttyra               ttyz1
+[2025-09-07 11:05:29.480] ptp0                ptyr5               ptyyc               ttya4               ttyrb               ttyz2
+[2025-09-07 11:05:29.480] pts                 ptyr6               ptyyd               ttya5                ttyrc               ttyz3
+[2025-09-07 11:05:29.497] ptya0               ptyr7               ptyye               ttya6               ttyrd               ttyz4
+[2025-09-07 11:05:29.497] ptya1               ptyr8               ptyyf               ttya7               ttyre               ttyz5
+[2025-09-07 11:05:29.512] ptya2               ptyr9               ptyz0               ttya8               ttyrf               ttyz6
+[2025-09-07 11:05:29.527] ptya3               ptyra               ptyz1               ttya9               ttys0               ttyz7
+[2025-09-07 11:05:29.527] ptya4               ptyrb               ptyz2               ttyaa               ttys1               ttyz8
+[2025-09-07 11:05:29.546] ptya5               ptyrc               ptyz3               ttyab               ttys2               ttyz9
+[2025-09-07 11:05:29.546] ptya6               ptyrd               ptyz4               ttyac               ttys3               ttyza
+[2025-09-07 11:05:29.561] ptya7               ptyre               ptyz5               ttyad               ttys4               ttyzb
+[2025-09-07 11:05:29.561] ptya8               ptyrf               ptyz6               ttyae               ttys5               ttyzc
+[2025-09-07 11:05:29.576] ptya9               ptys0               ptyz7               ttyaf               ttys6               ttyzd
+[2025-09-07 11:05:29.592] ptyaa               ptys1               ptyz8               ttyb0               ttys7               ttyze
+[2025-09-07 11:05:29.592] ptyab               ptys2               ptyz9               ttyb1               ttys8               ttyzf
+[2025-09-07 11:05:29.607] ptyac               ptys3               ptyza               ttyb2               ttys9               ubi_ctrl
+[2025-09-07 11:05:29.607] ptyad               ptys4               ptyzb               ttyb3               ttysa               udev_network_queue
+[2025-09-07 11:05:29.623] ptyae               ptys5               ptyzc               ttyb4               ttysb               urandom
+[2025-09-07 11:05:29.639] ptyaf               ptys6               ptyzd               ttyb5               ttysc               vcs
+[2025-09-07 11:05:29.639] ptyb0               ptys7               ptyze               ttyb6               ttysd               vcs1
+[2025-09-07 11:05:29.656] ptyb1               ptys8               ptyzf               ttyb7               ttyse               vcs2
+[2025-09-07 11:05:29.656] ptyb2               ptys9               ram0                ttyb8               ttysf               vcs3
+[2025-09-07 11:05:29.672] ptyb3               ptysa               ram1                ttyb9               ttyt0               vcs4
+[2025-09-07 11:05:29.672] ptyb4               ptysb               ram10               ttyba               ttyt1               vcs5
+[2025-09-07 11:05:29.688] ptyb5               ptysc               ram11               ttybb               ttyt2               vcs6
+[2025-09-07 11:05:29.705] ptyb6               ptysd               ram12               ttybc               ttyt3               vcsa
+[2025-09-07 11:05:29.705] ptyb7               ptyse               ram13               ttybd               ttyt4               vcsa1
+[2025-09-07 11:05:29.719] ptyb8               ptysf               ram14               ttybe               ttyt5               vcsa2
+[2025-09-07 11:05:29.720] ptyb9               ptyt0               ram15               ttybf               ttyt6               vcsa3
+[2025-09-07 11:05:29.736] ptyba               ptyt1               ram2                ttyc0               ttyt7               vcsa4
+[2025-09-07 11:05:29.736] ptybb               ptyt2               ram3                ttyc1               ttyt8               vcsa5
+[2025-09-07 11:05:29.752] ptybc               ptyt3               ram4                ttyc2               ttyt9               vcsa6
+[2025-09-07 11:05:29.769] ptybd               ptyt4               ram5                ttyc3               ttyta               vcsu
+[2025-09-07 11:05:29.769] ptybe               ptyt5               ram6                ttyc4               ttytb               vcsu1
+[2025-09-07 11:05:29.783] ptybf               ptyt6               ram7                ttyc5               ttytc               vcsu2
+[2025-09-07 11:05:29.783] ptyc0               ptyt7               ram8                ttyc6               ttytd               vcsu3
+[2025-09-07 11:05:29.802] ptyc1               ptyt8               ram9                ttyc7               ttyte               vcsu4
+[2025-09-07 11:05:29.816] ptyc2               ptyt9               random              ttyc8               ttytf               vcsu5
+[2025-09-07 11:05:29.816] ptyc3               ptyta               rfkill              ttyc9               ttyu0               vcsu6
+[2025-09-07 11:05:29.831] ptyc4               ptytb               rtc                 ttyca               ttyu1               vfio
+[2025-09-07 11:05:29.831] ptyc5               ptytc               rtc0                ttycb               ttyu2               vhci
+[2025-09-07 11:05:29.847] ptyc6               ptytd               shm                 ttycc               ttyu3               vsock
+[2025-09-07 11:05:29.847] ptyc7               ptyte               snd                 ttycd               ttyu4               zero
+[2025-09-07 11:05:29.864] ptyc8               ptytf               stderr              ttyce               ttyu5
+[2025-09-07 11:05:29.864] ptyc9               ptyu0               stdin               ttycf               ttyu6
+[2025-09-07 11:05:29.882] ptyca               ptyu1               stdout              ttyd0               ttyu7
+[2025-09-07 11:05:29.882] ptycb               ptyu2               tty                 ttyd1               ttyu8
+[2025-09-07 11:05:29.896] root@Trenz:/dev# cd /
+[2025-09-07 11:05:31.400] root@Trenz:/# ls
+[2025-09-07 11:05:31.896] bin    dev    home   lib    mnt    root   sbin   sys    usr
+[2025-09-07 11:05:31.913] boot   etc    init   media  proc   run    srv    tmp    var
+[2025-09-07 11:05:31.929] root@Trenz:/# cd    df -h
+[2025-09-07 11:05:35.415] Filesystem                Size      Used Available Use% Mounted on
+[2025-09-07 11:05:35.432] devtmpfs                  4.0M      4.0K      4.0M   0% /dev
+[2025-09-07 11:05:35.432] tmpfs                     3.9G         0      3.9G   0% /dev/shm
+[2025-09-07 11:05:35.432] tmpfs                     1.6G      9.6M      1.5G   1% /run
+[2025-09-07 11:05:35.447] tmpfs                     3.9G      8.0K      3.9G   0% /tmp
+[2025-09-07 11:05:35.447] tmpfs                     3.9G      8.0K      3.9G   0% /var/volatile
+[2025-09-07 11:05:35.447] /dev/mmcblk1p1            2.0G     99.2M      1.9G   5% /run/media/BOOT-mmcblk1p1
+[2025-09-07 11:05:35.720] /dev/mmcblk1p2           20.0G     64.0K     20.0G   0% /run/media/ROOTFS-mmcblk1p2
+[2025-09-07 11:05:35.720] tmpfs                   795.0M      4.0K    795.0M   0% /run/user/0
+[2025-09-07 11:05:35.735] root@Trenz:/# cd    ls /run/media/BOOT-mmcblk1p1
+[2025-09-07 11:05:56.151] BOOT.bin                   boot.scr                   v0.orig.BOOT.bin
+[2025-09-07 11:05:56.170] System Volume Information  image.ub                   v1.compiled.plm.BOOT.bin
+[2025-09-07 11:05:56.170] root@Trenz:/# ls -al /run/media/BOOT-mmcblk1p1
+[2025-09-07 11:06:01.769] total 101504
+[2025-09-07 11:06:01.785] drwxrwx---    3 root     disk         16384 Jan  1  1970 .
+[2025-09-07 11:06:01.785] drwxr-xr-x    4 root     root            80 Feb 27 17:26 ..
+[2025-09-07 11:06:01.785] -rwxrwx---    1 root     disk       4575648 Sep  6  2025 BOOT.bin
+[2025-09-07 11:06:01.800] drwxrwx---    2 root     disk         65536 Sep  6  2025 System Volume Information
+[2025-09-07 11:06:01.800] -rwxrwx---    1 root     disk          2477 Sep  4  2025 boot.scr
+[2025-09-07 11:06:01.800] -rwxrwx---    1 root     disk      89978995 Sep  4  2025 image.ub
+[2025-09-07 11:06:01.817] -rwxrwx---    1 root     disk       4566464 Sep  4  2025 v0.orig.BOOT.bin
+[2025-09-07 11:06:01.817] -rwxrwx---    1 root     disk       4575296 Sep  6  2025 v1.compiled.plm.BOOT.bin
+[2025-09-07 11:06:01.831] root@Trenz:/# cd /run/media/BOOT-mmcblk1p1
+[2025-09-07 11:08:46.653] root@Trenz:/run/media/BOOT-mmcblk1p1# ls
+[2025-09-07 11:08:47.453] BOOT.bin                   boot.scr                   v0.orig.BOOT.bin
+[2025-09-07 11:08:47.454] System Volume Information  image.ub                   v1.compiled.plm.BOOT.bin
+[2025-09-07 11:08:47.466] root@Trenz:/run/media/BOOT-mmcblk1p1# mv image.ub image.ubno.diisk.
+[2025-09-07 11:09:01.404] root@Trenz:/run/media/BOOT-mmcblk1p1# ls -al
+[2025-09-07 11:09:02.988] total 101504
+[2025-09-07 11:09:02.988] drwxrwx---    3 root     disk         16384 Jan  1  1970 .
+[2025-09-07 11:09:03.003] drwxr-xr-x    4 root     root            80 Feb 27 17:26 ..
+[2025-09-07 11:09:03.003] -rwxrwx---    1 root     disk       4575648 Sep  6  2025 BOOT.bin
+[2025-09-07 11:09:03.003] drwxrwx---    2 root     disk         65536 Sep  6  2025 System Volume Information
+[2025-09-07 11:09:03.019] -rwxrwx---    1 root     disk          2477 Sep  4  2025 boot.scr
+[2025-09-07 11:09:03.019] -rwxrwx---    1 root     disk      89978995 Sep  4  2025 no.disk.image.ub
+[2025-09-07 11:09:03.037] -rwxrwx---    1 root     disk       4566464 Sep  4  2025 v0.orig.BOOT.bin
+[2025-09-07 11:09:03.037] -rwxrwx---    1 root     disk       4575296 Sep  6  2025 v1.compiled.plm.BOOT.bin
+[2025-09-07 11:09:03.053] root@Trenz:/run/media/BOOT-mmcblk1p1# sudo reboot
+[2025-09-07 11:09:29.101] 
+[2025-09-07 11:09:29.276] 
+[2025-09-07 11:09:29.453] 
+[2025-09-07 11:09:32.860] ^C
+[2025-09-07 11:09:34.365] ^Z
+[2025-09-07 11:09:35.083] 
+[2025-09-07 11:09:35.292] 
+[2025-09-07 11:09:35.483] 
+[2025-09-07 11:09:46.563] [0.020]****************************************
+[2025-09-07 11:09:46.576] [0.061]Xilinx Versal Platform Loader and Manager 
+[2025-09-07 11:09:46.576] [0.105]Release 2023.2   Sep  6 2025  -  15:34:16
+[2025-09-07 11:09:46.576] [0.150]Platform Version: v2.0 PMC: v2.0, PS: v2.0
+[2025-09-07 11:09:46.592] [0.202]BOOTMODE: 0x5, MULTIBOOT: 0xF0000000
+[2025-09-07 11:09:46.592] [0.246]****************************************
+[2025-09-07 11:09:46.592] [0.515]Non Secure Boot
+[2025-09-07 11:09:46.592] [4.247]PLM Initialization Time 
+[2025-09-07 11:09:46.592] [4.283]***********Boot PDI Load: Started***********
+[2025-09-07 11:09:46.610] [4.333]Loading PDI from SD1
+[2025-09-07 11:09:46.610] [4.366]Monolithic/Master Device
+[2025-09-07 11:09:46.610] [288.067]283.724 ms: PDI initialization time
+[2025-09-07 11:09:46.610] [288.118]+++Loading Image#: 0x1, Name: lpd, Id: 0x04210002
+[2025-09-07 11:09:46.626] [288.180]---Loading Partition#: 0x1, Id: 0xC
+[2025-09-07 11:09:46.626] [342.592] 54.353 ms for Partition#: 0x1, Size: 10096 Bytes
+[2025-09-07 11:09:46.626] [347.429]---Loading Partition#: 0x2, Id: 0x0
+[2025-09-07 11:09:46.641] [359.521] 8.304 ms for Partition#: 0x2, Size: 55232 Bytes
+[2025-09-07 11:09:46.641] PSM Firmware version: 2024.2 [Build: Apr 23 2025 07:50:54 ] 
+[2025-09-07 11:09:46.641] [366.783]+++Loading Image#: 0x2, Name: pl_cfi, Id: 0x18700000
+[2025-09-07 11:09:46.659] [371.929]---Loading Partition#: 0x3, Id: 0x3
+[2025-09-07 11:09:47.026] [721.109] 345.390 ms for Partition#: 0x3, Size: 2380032 Bytes
+[2025-09-07 11:09:47.026] [723.580]---Loading Partition#: 0x4, Id: 0x5
+[2025-09-07 11:09:47.122] [827.078] 99.712 ms for Partition#: 0x4, Size: 444336 Bytes
+[2025-09-07 11:09:47.139] [829.398]+++Loading Image#: 0x3, Name: fpd, Id: 0x0420C003
+[2025-09-07 11:09:47.139] [834.313]---Loading Partition#: 0x5, Id: 0x8
+[2025-09-07 11:09:47.139] [841.434] 3.334 ms for Partition#: 0x5, Size: 4528 Bytes
+[2025-09-07 11:09:47.154] [843.859]+++Loading Image#: 0x4, Name: apu_subsystem, Id: 0x1C000000
+[2025-09-07 11:09:47.154] [849.246]---Loading Partition#: 0x6, Id: 0x0
+[2025-09-07 11:09:47.171] [863.691] 10.657 ms for Partition#: 0x6, Size: 67632 Bytes
+[2025-09-07 11:09:47.171] [865.916]---Loading Partition#: 0x7, Id: 0x0
+[2025-09-07 11:09:47.346] [1025.898] 156.194 ms for Partition#: 0x7, Size: 1202208 Bytes
+[2025-09-07 11:09:47.346] [1028.452]---Loading Partition#: 0x8, Id: 0x0
+[2025-09-07 11:09:47.346] [1039.218] 6.897 ms for Partition#: 0x8, Size: 44304 Bytes
+[2025-09-07 11:09:47.362] [1041.504]***********Boot PDI Load: Done***********
+[2025-09-07 11:09:47.362] [1045.809]126.335 ms: ROM Time
+[2025-09-07 11:09:47.362] [1048.428]Total PLM Boot Time 
+[2025-09-07 11:09:47.362] INFO:    BL31: Early console setup
+[2025-09-07 11:09:47.377] NOTICE:  TF-A running on SILICON 0
+[2025-09-07 11:09:47.377] [1056.993]ATF_ADDR: 0xFFFF0830, 0x0
+[2025-09-07 11:09:47.377] [1060.014]ATF_VALUE: 0x584E4C58
+[2025-09-07 11:09:47.377] [1062.726]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.377] [1064.862]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.377] [1066.999]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.393] [1069.137]ATF_VALUE: 0xF0254C18
+[2025-09-07 11:09:47.393] [1071.850]ATF_VALUE: 0xF0254E78
+[2025-09-07 11:09:47.393] [1074.563]ATF_VALUE: 0xF02551B8
+[2025-09-07 11:09:47.393] [1077.275]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.393] [1079.412]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.393] [1081.549]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.409] [1083.685]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.409] [1085.821]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.409] [1087.958]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.409] [1090.094]ATF_VALUE: 0xF62B0000
+[2025-09-07 11:09:47.409] [1092.805]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.409] [1094.942]ATF_VALUE: 0xF6352000
+[2025-09-07 11:09:47.409] [1097.655]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.425] [1099.791]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.425] [1101.928]ATF_VALUE: 0x0
+[2025-09-07 11:09:47.425] [1104.064]ATF_VALUE: 0xF0257648
+[2025-09-07 11:09:47.425] [1106.775]ATF_VALUE: 0xF02578B8
+[2025-09-07 11:09:47.425] [1109.488]ATF_VALUE: 0xF0257B28
+[2025-09-07 11:09:47.425] [1112.201]ATF_VALUE: 0xF02559C8
+[2025-09-07 11:09:47.442] [1114.912]ATF_VALUE: 0xF02560F4
+[2025-09-07 11:09:47.442] INFO:    BL31: GET_HANDOFF_PARAMS call success=0
+[2025-09-07 11:09:47.442] INFO:    BL31: PLM to TF-A handover success 0
+[2025-09-07 11:09:47.442] NOTICE:  BL31: Secure code at 0x0
+[2025-09-07 11:09:47.442] NOTICE:  BL31: Non secure code at 0x8000000
+[2025-09-07 11:09:47.456] NOTICE:  BL31: v2.10.0	(debug):xlnx_rebase_v2.10_2024.1-27-g14cea4616-dirty
+[2025-09-07 11:09:47.456] NOTICE:  BL31: Built : 04:42:28, Sep 19 2024
+[2025-09-07 11:09:47.456] INFO:    GICv3 with legacy support detected.
+[2025-09-07 11:09:47.474] INFO:    ARM GICv3 driver initialized in EL3
+[2025-09-07 11:09:47.474] INFO:    Maximum SPI INTID supported: 191
+[2025-09-07 11:09:47.474] INFO:    BL31: Initializing runtime services
+[2025-09-07 11:09:47.474] INFO:    BL31: cortex_a72: CPU workaround for erratum 859971 was applied
+[2025-09-07 11:09:47.491] INFO:    BL31: cortex_a72: CPU workaround for erratum 1319367 was applied
+[2025-09-07 11:09:47.491] INFO:    BL31: cortex_a72: CPU workaround for CVE 2017_5715 was applied
+[2025-09-07 11:09:47.507] INFO:    BL31: cortex_a72: CPU workaround for CVE 2018_3639 was applied
+[2025-09-07 11:09:47.507] INFO:    BL31: cortex_a72: CPU workaround for CVE 2022_23960 was applied
+[2025-09-07 11:09:47.507] INFO:    BL31: Preparing for EL3 exit to normal world
+[2025-09-07 11:09:47.520] INFO:    Entry point address = 0x8000000
+[2025-09-07 11:09:47.520] INFO:    SPSR = 0x3c9
+[2025-09-07 11:09:47.904] 
+[2025-09-07 11:09:47.904] 
+[2025-09-07 11:09:47.904] U-Boot 2024.01 (Oct 24 2024 - 10:42:51 +0000)
+[2025-09-07 11:09:47.920] 
+[2025-09-07 11:09:47.920] CPU:   Versal
+[2025-09-07 11:09:47.920] Silicon: v2
+[2025-09-07 11:09:47.920] Chip:  v2
+[2025-09-07 11:09:47.920] Model: Xilinx Versal
+[2025-09-07 11:09:47.920] DRAM:  2 GiB (effective 8 GiB)
+[2025-09-07 11:09:48.288] EL Level:	EL2
+[2025-09-07 11:09:48.306] Core:  46 devices, 23 uclasses, devicetree: board
+[2025-09-07 11:09:48.306] MMC:   mmc@f1040000: 0, mmc@f1050000: 1
+[2025-09-07 11:09:48.321] Loading Environment from FAT... Unable to use mmc 0:0...
+[2025-09-07 11:09:48.528] In:    serial@ff010000
+[2025-09-07 11:09:48.528] Out:   serial@ff010000
+[2025-09-07 11:09:48.546] Err:   serial@ff010000
+[2025-09-07 11:09:48.546] Bootmode: SD_MODE1
+[2025-09-07 11:09:48.546] Net:   
+[2025-09-07 11:09:48.562] ZYNQ GEM: ff0c0000, mdio bus ff0c0000, phyaddr 1, interface rgmii-id
+[2025-09-07 11:09:48.562] eth0: ethernet@ff0c0000
+[2025-09-07 11:09:48.562] Hit any key to stop autoboot:  5  4  3  2  1  0 
+[2025-09-07 11:09:53.666] switch to partitions #0, OK
+[2025-09-07 11:09:53.666] mmc1 is current device
+[2025-09-07 11:09:53.683] Scanning mmc 1:1...
+[2025-09-07 11:09:53.697] Found U-Boot script /boot.scr
+[2025-09-07 11:09:53.730] 2477 bytes read in 15 ms (161.1 KiB/s)
+[2025-09-07 11:09:53.730] ## Executing script at 20000000
+[2025-09-07 11:09:53.730] [TE_BOOT-00] Automatically generated Trenz Electronic Boot Source file with setup def
+[2025-09-07 11:09:53.730] [TE_BOOT-00] Boot Source Script File creation date: 2025_04_23 07_48_11
+[2025-09-07 11:09:53.747] [TE_BOOT-01] Trenz Boot-file version 1.1 (development)
+[2025-09-07 11:09:53.747] [TE_BOOT-10] Found boot.scr in device: mmc1
+[2025-09-07 11:09:53.747] [TE_BOOT-11] Chosen Bootmode is from boot_targets=mmc1 jtag mmc0 mmc1 xspi0 usb0 pxe dhcp
+[2025-09-07 11:09:53.762] [TE_BOOT-11] Use RAM Address 0x10000000 for linux image
+[2025-09-07 11:09:53.777] ** No partition table - mmc 0 **
+[2025-09-07 11:09:53.777] Couldn't find partition mmc 0:1
+[2025-09-07 11:09:53.792] SCRIPT FAILED: continuing...
+[2025-09-07 11:09:53.826] Failed to load '/'
+[2025-09-07 11:09:53.857] No EFI system partition
+[2025-09-07 11:09:53.857] No EFI system partition
+[2025-09-07 11:09:53.857] Failed to persist EFI variables
+[2025-09-07 11:09:53.857] Missing TPMv2 device for EFI_TCG_PROTOCOL
+[2025-09-07 11:09:53.857] Missing RNG device for EFI_RNG_PROTOCOL
+[2025-09-07 11:09:53.874] BootOrder not defined
+[2025-09-07 11:09:53.874] EFI boot manager: Cannot load any image
+[2025-09-07 11:09:53.874] JTAG: Trying to boot script at 20000000
+[2025-09-07 11:09:53.888] ## Executing script at 20000000
+[2025-09-07 11:09:53.888] [TE_BOOT-00] Automatically generated Trenz Electronic Boot Source file with setup def
+[2025-09-07 11:09:53.888] [TE_BOOT-00] Boot Source Script File creation date: 2025_04_23 07_48_11
+[2025-09-07 11:09:53.906] [TE_BOOT-01] Trenz Boot-file version 1.1 (development)
+[2025-09-07 11:09:53.906] [TE_BOOT-10] Found boot.scr in device: jtag
+[2025-09-07 11:09:53.906] [TE_BOOT-11] Chosen Bootmode is from boot_targets=mmc1 jtag mmc0 mmc1 xspi0 usb0 pxe dhcp
+[2025-09-07 11:09:53.922] [TE_BOOT-11] Use RAM Address 0x10000000 for linux image
+[2025-09-07 11:09:53.937] ** No partition table - mmc 0 **
+[2025-09-07 11:09:53.937] Couldn't find partition mmc 0:1
+[2025-09-07 11:09:53.953] JTAG: SCRIPT FAILED: continuing...
+[2025-09-07 11:09:54.161] switch to partitions #0, OK
+[2025-09-07 11:09:54.161] mmc0(part 0) is current device
+[2025-09-07 11:09:54.177] ** No partition table - mmc 0 **
+[2025-09-07 11:09:54.177] Couldn't find partition mmc 0:1
+[2025-09-07 11:09:54.256] switch to partitions #0, OK
+[2025-09-07 11:09:54.273] mmc1 is current device
+[2025-09-07 11:09:54.273] Scanning mmc 1:1...
+[2025-09-07 11:09:54.306] Found U-Boot script /boot.scr
+[2025-09-07 11:09:54.321] 2477 bytes read in 15 ms (161.1 KiB/s)
+[2025-09-07 11:09:54.321] ## Executing script at 20000000
+[2025-09-07 11:09:54.339] [TE_BOOT-00] Automatically generated Trenz Electronic Boot Source file with setup def
+[2025-09-07 11:09:54.339] [TE_BOOT-00] Boot Source Script File creation date: 2025_04_23 07_48_11
+[2025-09-07 11:09:54.339] [TE_BOOT-01] Trenz Boot-file version 1.1 (development)
+[2025-09-07 11:09:54.353] [TE_BOOT-10] Found boot.scr in device: mmc1
+[2025-09-07 11:09:54.353] [TE_BOOT-11] Chosen Bootmode is from boot_targets=mmc1 jtag mmc0 mmc1 xspi0 usb0 pxe dhcp
+[2025-09-07 11:09:54.353] [TE_BOOT-11] Use RAM Address 0x10000000 for linux image
+[2025-09-07 11:09:54.386] ** No partition table - mmc 0 **
+[2025-09-07 11:09:54.386] Couldn't find partition mmc 0:1
+[2025-09-07 11:09:54.386] SCRIPT FAILED: continuing...
+[2025-09-07 11:09:54.434] Failed to load '/'
+[2025-09-07 11:09:54.449] BootOrder not defined
+[2025-09-07 11:09:54.449] EFI boot manager: Cannot load any image
+[2025-09-07 11:09:54.465] SF: Detected mt25qu512a with page size 512 Bytes, erase size 128 KiB, total 256 MiB
+[2025-09-07 11:09:54.466] device 0 offset 0x7f80000, size 0x80000
+[2025-09-07 11:09:54.466] SF: 524288 bytes @ 0x7f80000 Read: OK
+[2025-09-07 11:09:54.483] XSPI: Trying to boot script at 20000000
+[2025-09-07 11:09:54.483] ## Executing script at 20000000
+[2025-09-07 11:09:54.483] Wrong image format for "source" command
+[2025-09-07 11:09:54.483] XSPI: SCRIPT FAILED: continuing...
+[2025-09-07 11:09:54.483] starting USB...
+[2025-09-07 11:09:54.483] Bus usb@fe200000: Register 1000440 NbrPorts 1
+[2025-09-07 11:09:54.689] Starting the controller
+[2025-09-07 11:09:54.707] USB XHCI 1.10
+[2025-09-07 11:09:54.707] scanning bus usb@fe200000 for devices... 1 USB Device(s) found
+[2025-09-07 11:09:55.827]        scanning usb for storage devices... 0 Storage Device(s) found
+[2025-09-07 11:09:55.827] 
+[2025-09-07 11:09:55.827] Device 0: unknown device
+[2025-09-07 11:09:55.827] ethernet@ff0c0000 Waiting for PHY auto negotiation to complete......................................... TIMEOUT !
+[2025-09-07 11:10:15.905] missing environment variable: pxeuuid
+[2025-09-07 11:10:15.905] Retrieving file: pxelinux.cfg/01-fc-0f-e7-ed-6c-eb
+[2025-09-07 11:10:15.905] ethernet@ff0c0000 Waiting for PHY auto negotiation to complete......................................... TIMEOUT !
+[2025-09-07 11:10:35.970] Retrieving file: pxelinux.cfg/00000000
+[2025-09-07 11:10:35.985] ethernet@ff0c0000 Waiting for PHY auto negotiation to complete......................................... TIMEOUT !
+[2025-09-07 11:10:56.050] Retrieving file: pxelinux.cfg/0000000
+[2025-09-07 11:10:56.050] ethernet@ff0c0000 Waiting for PHY auto negotiation to complete......................................... TIMEOUT !
+[2025-09-07 11:11:16.115] Retrieving file: pxelinux.cfg/000000
+[2025-09-07 11:11:16.115] ethernet@ff0c0000 Waiting for PHY auto negotiation to complete......................................... TIMEOUT !
+[2025-09-07 11:11:36.195] Retrieving file: pxelinux.cfg/00000
+[2025-09-07 11:11:36.195] ethernet@ff0c0000 Waiting for PHY auto negotiation to complete......................................... TIMEOUT !
+[2025-09-07 11:11:56.260] Retrieving file: pxelinux.cfg/0000
+[2025-09-07 11:11:56.260] ethernet@ff0c0000 Waiting for PHY auto negotiation to complete.
